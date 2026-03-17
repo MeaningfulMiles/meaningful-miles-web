@@ -1,96 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Nunito+Sans:wght@400;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 40 33% 95%;
+    --foreground: 60 5% 11%;
+    --card: 40 60% 98%;
+    --card-foreground: 60 5% 11%;
+    --popover: 40 60% 98%;
+    --popover-foreground: 60 5% 11%;
+    --primary: 100 53% 20%;
+    --primary-foreground: 40 60% 98%;
+    --secondary: 20 52% 36%;
+    --secondary-foreground: 40 60% 98%;
+    --muted: 35 30% 90%;
+    --muted-foreground: 30 10% 32%;
+    --accent: 25 75% 44%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 100 20% 85%;
+    --input: 100 20% 85%;
+    --ring: 100 53% 20%;
+    --radius: 10px;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Brand colors */
+    --forest-green: 100 53% 20%;
+    --burnt-orange: 25 75% 44%;
+    --burnt-orange-hover: 25 70% 36%;
+    --parched-cream: 37 42% 92%;
+    --terracotta-brown: 20 52% 36%;
+    --off-white: 40 60% 98%;
+    --dark-text: 60 5% 11%;
+    --mid-text: 30 10% 32%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* India accent colors */
+    --saffron: 30 100% 60%;
+    --royal-blue: 215 100% 25%;
+    --marigold: 51 100% 50%;
+    --fuchsia: 322 78% 43%;
+    --terracotta-red: 17 100% 38%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --sidebar-background: 100 53% 20%;
+    --sidebar-foreground: 40 60% 98%;
+    --sidebar-primary: 100 53% 20%;
+    --sidebar-primary-foreground: 40 60% 98%;
+    --sidebar-accent: 25 75% 44%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 100 20% 30%;
+    --sidebar-ring: 25 75% 44%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Shadows */
+    --card-shadow: 0 2px 20px rgba(45, 80, 22, 0.08);
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    font-family: 'Nunito Sans', sans-serif;
   }
 }
 
@@ -98,8 +64,146 @@ All colors MUST be HSL.
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground;
+    font-size: 17px;
+    line-height: 1.75;
+  }
+  h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+  }
+  h1 {
+    @apply text-primary;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 400;
+    line-height: 1.15;
+  }
+  h2 {
+    @apply text-primary;
+    font-size: clamp(2rem, 3.5vw, 2.75rem);
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  h3 {
+    color: hsl(var(--terracotta-brown));
+    font-size: 1.625rem;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: 'Cormorant Garamond', serif;
+  }
+  .font-body {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  .text-mid {
+    color: hsl(var(--mid-text));
+  }
+  .bg-parched-cream {
+    background-color: hsl(var(--parched-cream));
+  }
+  .bg-off-white {
+    background-color: hsl(var(--off-white));
+  }
+  .bg-forest-green {
+    background-color: hsl(var(--forest-green));
+  }
+  .text-forest-green {
+    color: hsl(var(--forest-green));
+  }
+  .bg-burnt-orange {
+    background-color: hsl(var(--burnt-orange));
+  }
+  .text-burnt-orange {
+    color: hsl(var(--burnt-orange));
+  }
+  .bg-terracotta-brown {
+    background-color: hsl(var(--terracotta-brown));
+  }
+  .text-terracotta-brown {
+    color: hsl(var(--terracotta-brown));
+  }
+  .text-saffron {
+    color: hsl(var(--saffron));
+  }
+  .text-royal-blue {
+    color: hsl(var(--royal-blue));
+  }
+  .text-marigold {
+    color: hsl(var(--marigold));
+  }
+  .text-fuchsia-accent {
+    color: hsl(var(--fuchsia));
+  }
+  .text-terracotta-red {
+    color: hsl(var(--terracotta-red));
+  }
+  .bg-saffron {
+    background-color: hsl(var(--saffron));
+  }
+  .bg-royal-blue {
+    background-color: hsl(var(--royal-blue));
+  }
+  .bg-marigold {
+    background-color: hsl(var(--marigold));
+  }
+  .bg-fuchsia-accent {
+    background-color: hsl(var(--fuchsia));
+  }
+
+  .pull-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(1.375rem, 2.5vw, 1.75rem);
+    color: hsl(var(--forest-green));
+    line-height: 1.4;
+  }
+
+  .section-padding {
+    @apply px-4 py-16 md:px-8 lg:px-16 xl:px-24 md:py-24;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-3 rounded-[10px] font-body font-semibold text-[15px] uppercase tracking-wider transition-colors duration-200;
+    background-color: hsl(var(--burnt-orange));
+    color: white;
+    letter-spacing: 0.08em;
+  }
+  .btn-primary:hover {
+    background-color: hsl(var(--burnt-orange-hover));
+  }
+
+  .btn-outline-green {
+    @apply inline-flex items-center justify-center px-8 py-3 rounded-[10px] font-body font-semibold text-[15px] uppercase tracking-wider transition-colors duration-200 border-2;
+    border-color: hsl(var(--forest-green));
+    color: hsl(var(--forest-green));
+    letter-spacing: 0.08em;
+  }
+  .btn-outline-green:hover {
+    background-color: hsl(var(--forest-green));
+    color: white;
+  }
+
+  .btn-outline-white {
+    @apply inline-flex items-center justify-center px-8 py-3 rounded-[10px] font-body font-semibold text-[15px] uppercase tracking-wider transition-colors duration-200 border-2 border-white;
+    color: white;
+    letter-spacing: 0.08em;
+  }
+  .btn-outline-white:hover {
+    background-color: white;
+    color: hsl(var(--forest-green));
+  }
+
+  .mm-card {
+    @apply rounded-[10px] p-6 md:p-8;
+    box-shadow: var(--card-shadow);
+    background-color: hsl(var(--off-white));
+  }
+
+  .hr-subtle {
+    border-top: 1px solid rgba(45, 80, 22, 0.12);
   }
 }
