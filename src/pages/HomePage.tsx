@@ -6,14 +6,50 @@ import SectionDivider from "@/components/SectionDivider";
 import ScrollReveal from "@/components/ScrollReveal";
 import { useState, useEffect, useCallback } from "react";
 import { Plane, Shield, Home as HomeIcon, ChevronLeft, ChevronRight } from "lucide-react";
+import heroTajGuests from "@/assets/hero-taj-guests.jpeg";
+import heroVetClinic from "@/assets/hero-vet-clinic.jpeg";
+import heroDisabilitiesGroup from "@/assets/hero-disabilities-group.jpeg";
+import heroAansaQutub from "@/assets/hero-aansa-qutub.jpeg";
+import heroWelcomeMeeting from "@/assets/hero-welcome-meeting.jpeg";
+import heroAnimalSanctuary from "@/assets/hero-animal-sanctuary.jpeg";
+import heroOldDelhiMarket from "@/assets/hero-old-delhi-market.png";
 
 const heroSlides = [
-  { label: "HERO 1: Taj Mahal at sunrise — golden light, wide shot, awe-inspiring" },
-  { label: "HERO 2: Vet gently treating a street dog at Delhi shelter — compassion" },
-  { label: "HERO 3: Volunteer laughing with disability charity team — genuine joy" },
-  { label: "HERO 4: Old Delhi street — vibrant colour, beautiful organised chaos" },
-  { label: "HERO 5: Solo female traveller at Delhi landmark — confident, smiling, safe" },
-  { label: "HERO 6: Humayun's Tomb or Qutub Minar at golden hour — architectural wonder" },
+  {
+    src: heroTajGuests,
+    alt: "Meaningful Miles guests standing in front of the Taj Mahal in Agra.",
+    label: "Guests at the Taj Mahal — wonder, arrival, and shared purpose",
+  },
+  {
+    src: heroVetClinic,
+    alt: "Volunteer and local clinician treating a dog at a Delhi animal shelter.",
+    label: "Animal welfare in action at a Delhi shelter",
+  },
+  {
+    src: heroDisabilitiesGroup,
+    alt: "Group activity session with volunteers and participants in a disabilities programme.",
+    label: "Disabilities empowerment through joyful, shared activity",
+  },
+  {
+    src: heroOldDelhiMarket,
+    alt: "Warm, vibrant market scene evoking the colour and life of Old Delhi.",
+    label: "The spirit of Old Delhi — colour, food, and connection",
+  },
+  {
+    src: heroAansaQutub,
+    alt: "Aansa smiling in front of Qutub Minar holding a Meaningful Miles cap.",
+    label: "Aansa in Delhi — confidence, care, and local guidance",
+  },
+  {
+    src: heroWelcomeMeeting,
+    alt: "Meaningful Miles guests and team sharing a warm welcome meeting in a café setting.",
+    label: "A personal welcome from arrival to departure",
+  },
+  {
+    src: heroAnimalSanctuary,
+    alt: "Guest spending time with rescued animals at a sanctuary in India.",
+    label: "Compassionate animal encounters beyond the clinic",
+  },
 ];
 
 const galleryImages = [
