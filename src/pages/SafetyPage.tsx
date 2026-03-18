@@ -26,8 +26,21 @@ const SafetyPage = () => (
     </Helmet>
 
     <HeroSlider slides={[
-      { label: "HERO: Calm Delhi hotel lobby — safe, welcoming" },
-      { label: "HERO: Solo female traveller navigating Delhi confidently" },
+      {
+        src: safetyAirportWelcome,
+        alt: "Meaningful Miles representative welcoming guests at Delhi international arrivals.",
+        label: "Airport pickup from the moment you land in Delhi",
+      },
+      {
+        src: safetyCatSanctuary,
+        alt: "Guest relaxing in a calm animal sanctuary setting with cats nearby.",
+        label: "Warm, grounded environments that help you settle in safely",
+      },
+      {
+        src: safetyLocalGuidance,
+        alt: "Traveller interacting with a local in a market setting with support and confidence.",
+        label: "Cultural guidance that turns uncertainty into confidence",
+      },
     ]} height="60vh" />
 
     <section className="section-padding bg-off-white">
