@@ -11,6 +11,7 @@ const navItems = [
       { label: "Professionals", path: "/animal-welfare/professionals" },
       { label: "Vet Students (EMS)", path: "/animal-welfare/students" },
       { label: "Animal Lovers", path: "/animal-welfare/animal-lovers" },
+      { label: "Risk Analysis", path: "/animal-welfare/risk-analysis" },
     ],
   },
   {

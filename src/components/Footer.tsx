@@ -22,6 +22,7 @@ const Footer = () => (
             <Link to="/animal-welfare/professionals" className="font-body text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">Professionals</Link>
             <Link to="/animal-welfare/students" className="font-body text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">Vet Students (EMS)</Link>
             <Link to="/animal-welfare/animal-lovers" className="font-body text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">Animal Lovers</Link>
+            <Link to="/animal-welfare/risk-analysis" className="font-body text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">Risk Analysis</Link>
           </div>
         </div>
 

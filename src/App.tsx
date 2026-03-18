@@ -12,6 +12,7 @@ import WhyChooseUs from "./pages/WhyChooseUs";
 import AnimalWelfarePro from "./pages/AnimalWelfarePro";
 import AnimalWelfareStudents from "./pages/AnimalWelfareStudents";
 import AnimalWelfareLovers from "./pages/AnimalWelfareLovers";
+import RiskAnalysisPage from "./pages/RiskAnalysisPage";
 import DisabilitiesPro from "./pages/DisabilitiesPro";
 import DisabilitiesStudents from "./pages/DisabilitiesStudents";
 import GoodHeartedSoul from "./pages/GoodHeartedSoul";
@@ -50,6 +51,7 @@ const App = () => (
             <Route path="/animal-welfare/professionals" element={<AnimalWelfarePro />} />
             <Route path="/animal-welfare/students" element={<AnimalWelfareStudents />} />
             <Route path="/animal-welfare/animal-lovers" element={<AnimalWelfareLovers />} />
+            <Route path="/animal-welfare/risk-analysis" element={<RiskAnalysisPage />} />
             <Route path="/disabilities/professionals" element={<DisabilitiesPro />} />
             <Route path="/disabilities/students" element={<DisabilitiesStudents />} />
             <Route path="/good-hearted-soul" element={<GoodHeartedSoul />} />
