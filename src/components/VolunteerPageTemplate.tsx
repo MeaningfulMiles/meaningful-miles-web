@@ -25,7 +25,7 @@ interface VolunteerPageProps {
 
 const VolunteerPageTemplate = ({
   title, metaDesc, heroSlides, h1, h3, introText, whatYoullDo, whoFor,
-  extraRequirements, noteBox, safeguarding, showStudentDefault, ctaLabel = "Apply Now",
+  extraRequirements, noteBox, safeguarding, showStudentDefault, ctaLabel = "Book Now",
 }: VolunteerPageProps) => (
   <PageLayout>
     <Helmet>

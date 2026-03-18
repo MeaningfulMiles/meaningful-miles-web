@@ -114,7 +114,7 @@ const Navbar = () => {
               )
             )}
             <Link to="/apply" className="btn-primary ml-3 text-[13px] py-2 px-5">
-              Apply Now
+              Book Now
             </Link>
           </div>
 
@@ -176,7 +176,7 @@ const Navbar = () => {
           </div>
           <div className="px-8 pb-8 mt-auto">
             <Link to="/apply" className="btn-primary w-full text-center block">
-              Apply Now
+              Book Now
             </Link>
           </div>
         </div>
