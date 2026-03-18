@@ -12,6 +12,7 @@ const DisabilitiesPro = () => (
     whoFor="Qualified disability professionals — occupational therapists, speech and language therapists, support workers, social workers, and allied professionals."
     extraRequirements={["Volunteering insurance (mandatory)", "Enhanced DBS Certificate", "UNICEF Safeguarding Training", "Signed Code of Conduct"]}
     safeguarding
+    ctaLabel="Book Now"
   />
 );
 
