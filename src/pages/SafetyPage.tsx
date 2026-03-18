@@ -5,6 +5,9 @@ import SectionDivider from "@/components/SectionDivider";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Link } from "react-router-dom";
 import { ExternalLink } from "lucide-react";
+import safetyAirportWelcome from "@/assets/safety-airport-welcome.png";
+import safetyCatSanctuary from "@/assets/safety-cat-sanctuary.jpeg";
+import safetyLocalGuidance from "@/assets/safety-local-guidance.jpeg";
 
 const commitments = [
   { icon: "✈️", title: "Airport Pickup", desc: "We meet you at Delhi arrivals. No navigating airports alone. No uncertainty about what happens next.", color: "bg-saffron" },
