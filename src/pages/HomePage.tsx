@@ -348,17 +348,22 @@ const GalleryCarousel = () => {
         <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${offset * (100 / itemsPerView)}%)` }}>
           {galleryImages.map((img, i) => (
             <div key={i} className="flex-shrink-0 px-2" style={{ width: `${100 / itemsPerView}%` }}>
-              <div className="aspect-[3/4] rounded-lg flex items-center justify-center" style={{ backgroundColor: "#C8B89A", boxShadow: "0 2px 20px rgba(45,80,22,0.08)" }}>
-                <span className="font-body text-sm text-center px-4" style={{ color: "white" }}>{img}</span>
-              </div>
+              <figure className="flex flex-col gap-4">
+                <div className="aspect-[3/4] rounded-lg overflow-hidden" style={{ boxShadow: "0 2px 20px rgba(45,80,22,0.08)" }}>
+                  <img src={img.src} alt={img.alt} className="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <figcaption className="font-body text-sm text-mid-text leading-relaxed px-1">
+                  {img.caption}
+                </figcaption>
+              </figure>
             </div>
           ))}
         </div>
       </div>
-      <button onClick={() => setOffset(Math.max(0, offset - 1))} className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-forest-green flex items-center justify-center text-primary-foreground" disabled={offset === 0} aria-label="Previous">
+      <button onClick={() => setOffset(Math.max(0, offset - 1))} className="absolute left-0 top-[38%] -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-forest-green flex items-center justify-center text-primary-foreground" disabled={offset === 0} aria-label="Previous">
         <ChevronLeft className="w-5 h-5" />
       </button>
-      <button onClick={() => setOffset(Math.min(maxOffset, offset + 1))} className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-forest-green flex items-center justify-center text-primary-foreground" disabled={offset >= maxOffset} aria-label="Next">
+      <button onClick={() => setOffset(Math.min(maxOffset, offset + 1))} className="absolute right-0 top-[38%] -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-forest-green flex items-center justify-center text-primary-foreground" disabled={offset >= maxOffset} aria-label="Next">
         <ChevronRight className="w-5 h-5" />
       </button>
     </div>
