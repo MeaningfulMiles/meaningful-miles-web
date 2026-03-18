@@ -13,6 +13,14 @@ import heroAansaQutub from "@/assets/hero-aansa-qutub.jpeg";
 import heroWelcomeMeeting from "@/assets/hero-welcome-meeting.jpeg";
 import heroAnimalSanctuary from "@/assets/hero-animal-sanctuary.jpeg";
 import heroOldDelhiMarket from "@/assets/hero-old-delhi-market.png";
+import journeyMonkeyCare from "@/assets/journey-monkey-care.png";
+import journeyMarketBangles from "@/assets/journey-market-bangles.png";
+import journeyMountainSelfie from "@/assets/journey-mountain-selfie.jpeg";
+import journeyEmuCare from "@/assets/journey-emu-care.png";
+import journeyGroupBanner from "@/assets/journey-group-banner.jpeg";
+import journeyTajBacks from "@/assets/journey-taj-backs.jpeg";
+import journeyPlaygroundBanner from "@/assets/journey-playground-banner.jpeg";
+import journeyCommunityMeal from "@/assets/journey-community-meal.jpeg";
 
 const heroSlides = [
   {
@@ -53,14 +61,46 @@ const heroSlides = [
 ];
 
 const galleryImages = [
-  "Taj Mahal — iconic view, dawn light",
-  "Street dog receiving gentle treatment at shelter",
-  "Old Delhi alleyway — colour and life",
-  "Jama Masjid — grand and peaceful",
-  "Qutub Minar — ancient, striking",
-  "Humayun's Tomb — symmetry and stillness",
-  "Agra Fort — ochre walls, expansive",
-  "Volunteer in genuine moment — smiling, present",
+  {
+    src: journeyMonkeyCare,
+    alt: "Volunteer feeding a rescued baby monkey while seated on grass.",
+    caption: "Animal care in tender, unforgettable moments.",
+  },
+  {
+    src: journeyMarketBangles,
+    alt: "Traveller exploring a colourful market stall in India with a local guide.",
+    caption: "Markets, craftsmanship, and everyday connection.",
+  },
+  {
+    src: journeyMountainSelfie,
+    alt: "Two Meaningful Miles travellers smiling for a selfie at sunset in the mountains.",
+    caption: "Shared adventure beyond the expected route.",
+  },
+  {
+    src: journeyEmuCare,
+    alt: "Volunteer spending time with emus at an animal sanctuary.",
+    caption: "Encounters with animals that stay with you.",
+  },
+  {
+    src: journeyGroupBanner,
+    alt: "Group of Meaningful Miles guests posing with a banner in front of a Delhi monument.",
+    caption: "Travel together, give together, grow together.",
+  },
+  {
+    src: journeyTajBacks,
+    alt: "Three travellers facing the Taj Mahal wearing Meaningful Miles shirts.",
+    caption: "The Taj Mahal, seen as part of a bigger journey.",
+  },
+  {
+    src: journeyPlaygroundBanner,
+    alt: "Two women holding a Meaningful Miles banner in a community playground.",
+    caption: "Purposeful visits rooted in real community connection.",
+  },
+  {
+    src: journeyCommunityMeal,
+    alt: "Meaningful Miles guests sharing a community meal in a decorated hall.",
+    caption: "Meals, culture, and belonging woven into the experience.",
+  },
 ];
 
 const testimonials = [
