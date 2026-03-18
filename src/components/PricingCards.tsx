@@ -2,9 +2,10 @@ import { Link } from "react-router-dom";
 
 interface PricingCardsProps {
   showStudentDefault?: boolean;
+  ctaLabel?: string;
 }
 
-const PricingCards = ({ showStudentDefault }: PricingCardsProps) => {
+const PricingCards = ({ showStudentDefault, ctaLabel = "Apply Now" }: PricingCardsProps) => {
   const cards = [
     { weeks: 2, price: "£1,250", popular: false },
     { weeks: 3, price: "£1,750", popular: true },
@@ -31,7 +32,7 @@ const PricingCards = ({ showStudentDefault }: PricingCardsProps) => {
               <p className="font-body text-sm text-mid-text mb-4 italic">Student rate available — contact us</p>
             )}
             <Link to="/apply" className="btn-primary w-full text-center block">
-              Apply Now
+              {ctaLabel}
             </Link>
           </div>
         ))}

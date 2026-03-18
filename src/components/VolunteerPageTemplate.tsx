@@ -20,11 +20,12 @@ interface VolunteerPageProps {
   noteBox?: string;
   safeguarding?: boolean;
   showStudentDefault?: boolean;
+  ctaLabel?: string;
 }
 
 const VolunteerPageTemplate = ({
   title, metaDesc, heroSlides, h1, h3, introText, whatYoullDo, whoFor,
-  extraRequirements, noteBox, safeguarding, showStudentDefault,
+  extraRequirements, noteBox, safeguarding, showStudentDefault, ctaLabel = "Apply Now",
 }: VolunteerPageProps) => (
   <PageLayout>
     <Helmet>
@@ -98,12 +99,12 @@ const VolunteerPageTemplate = ({
 
         <ScrollReveal>
           <h2 className="mb-6">Duration & Pricing</h2>
-          <PricingCards showStudentDefault={showStudentDefault} />
+          <PricingCards showStudentDefault={showStudentDefault} ctaLabel={ctaLabel} />
         </ScrollReveal>
 
         <ScrollReveal>
           <div className="text-center pt-4">
-            <Link to="/apply" className="btn-primary">Apply Now →</Link>
+            <Link to="/apply" className="btn-primary">{ctaLabel} →</Link>
           </div>
         </ScrollReveal>
       </div>
