@@ -5,7 +5,7 @@ interface PricingCardsProps {
   ctaLabel?: string;
 }
 
-const PricingCards = ({ showStudentDefault, ctaLabel = "Apply Now" }: PricingCardsProps) => {
+const PricingCards = ({ showStudentDefault, ctaLabel = "Book Now" }: PricingCardsProps) => {
   const cards = [
     { weeks: 2, price: "£1,250", popular: false },
     { weeks: 3, price: "£1,750", popular: true },
