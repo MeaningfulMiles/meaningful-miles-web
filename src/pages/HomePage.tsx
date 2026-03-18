@@ -13,6 +13,8 @@ import heroAansaQutub from "@/assets/hero-aansa-qutub.jpeg";
 import heroWelcomeMeeting from "@/assets/hero-welcome-meeting.jpeg";
 import heroAnimalSanctuary from "@/assets/hero-animal-sanctuary.jpeg";
 import heroOldDelhiMarket from "@/assets/hero-old-delhi-market.png";
+import heroOldDelhiFood from "@/assets/hero-old-delhi-food.jpeg";
+import heroAnimalSanctuaryFriends from "@/assets/hero-animal-sanctuary-friends.jpeg";
 import journeyMonkeyCare from "@/assets/journey-monkey-care.png";
 import journeyMarketBangles from "@/assets/journey-market-bangles.png";
 import journeyMountainSelfie from "@/assets/journey-mountain-selfie.jpeg";
@@ -44,6 +46,11 @@ const heroSlides = [
     label: "The spirit of Old Delhi — colour, food, and connection",
   },
   {
+    src: heroOldDelhiFood,
+    alt: "Meaningful Miles guests enjoying street food in a vibrant Old Delhi market.",
+    label: "Old Delhi food experiences — flavour, culture, and joy",
+  },
+  {
     src: heroAansaQutub,
     alt: "Aansa smiling in front of Qutub Minar holding a Meaningful Miles cap.",
     label: "Aansa in Delhi — confidence, care, and local guidance",
@@ -57,6 +64,11 @@ const heroSlides = [
     src: heroAnimalSanctuary,
     alt: "Guest spending time with rescued animals at a sanctuary in India.",
     label: "Compassionate animal encounters beyond the clinic",
+  },
+  {
+    src: heroAnimalSanctuaryFriends,
+    alt: "Two Meaningful Miles guests standing together at an animal sanctuary with rescued farm animals behind them.",
+    label: "Sanctuary visits that feel personal, warm, and memorable",
   },
 ];
 
