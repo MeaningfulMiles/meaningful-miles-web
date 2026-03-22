@@ -15,6 +15,7 @@ import heroAansaQutub from "@/assets/hero-aansa-qutub.jpeg";
 import heroWelcomeMeeting from "@/assets/hero-welcome-meeting.jpeg";
 import heroAnimalSanctuary from "@/assets/hero-animal-sanctuary.jpeg";
 import heroOldDelhiMarket from "@/assets/hero-old-delhi-market.png";
+import heroBannerPlayground from "@/assets/education-banner-playground.png";
 import heroOldDelhiFood from "@/assets/hero-old-delhi-food.jpeg";
 import heroAnimalSanctuaryFriends from "@/assets/hero-animal-sanctuary-friends.jpeg";
 import journeyMonkeyCare from "@/assets/journey-monkey-care.png";
@@ -71,6 +72,11 @@ const heroSlides = [
     src: heroAnimalSanctuaryFriends,
     alt: "Two Meaningful Miles guests standing together at an animal sanctuary with rescued farm animals behind them.",
     label: "Sanctuary visits that feel personal, warm, and memorable",
+  },
+  {
+    src: heroBannerPlayground,
+    alt: "Two women holding a Meaningful Miles banner at a community playground with children playing.",
+    label: "Travel. Give. Grow. — Meaningful Miles in the field",
   },
 ];
 
