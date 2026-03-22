@@ -16,7 +16,7 @@ const FounderPage = () => (
     {/* Taj Mahal Hero Image */}
     <section className="bg-off-white -mt-1">
       <ScrollReveal>
-        <div className="max-w-5xl mx-auto px-4 pt-16 md:pt-24">
+        <div className="max-w-5xl mx-auto px-4 pt-4 md:pt-8">
           <img
             src={aansaTajMahal}
             alt="Aansa sitting on the bench at the Taj Mahal reflection pool"
