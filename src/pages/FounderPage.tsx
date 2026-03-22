@@ -44,12 +44,22 @@ const FounderPage = () => (
     <section className="section-padding bg-off-white pt-0">
       <SectionDivider />
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-10 md:gap-14">
-        {/* Portrait placeholder — right on desktop, top on mobile */}
+        {/* Photo strip — right on desktop, top on mobile */}
         <ScrollReveal className="order-first md:order-last md:w-[340px] flex-shrink-0">
-          <div className="w-full aspect-[3/4] rounded-[10px] flex items-center justify-center" style={{ backgroundColor: "#C8B89A" }}>
-            <span className="font-body text-sm text-center px-4" style={{ color: "white" }}>
-              PHOTO: Aansa — founder portrait
-            </span>
+          <div className="flex md:flex-col gap-3 overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory md:snap-none">
+            {[
+              { src: aansaBamiyan, alt: "Aansa at the ancient cliffs of Bamiyan, Afghanistan" },
+              { src: aansaCapePoint, alt: "Aansa at Cape Point, South Africa" },
+              { src: aansaRajasthan, alt: "Aansa in Rajasthan, India" },
+              { src: aansaDurdleDoor, alt: "Aansa at Durdle Door, UK" },
+            ].map((photo, i) => (
+              <img
+                key={i}
+                src={photo.src}
+                alt={photo.alt}
+                className="flex-shrink-0 w-[260px] md:w-full h-[220px] md:h-[200px] object-cover rounded-[10px] snap-center"
+              />
+            ))}
           </div>
         </ScrollReveal>
 
