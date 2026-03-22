@@ -46,7 +46,7 @@ const FounderPage = () => (
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-10 md:gap-14">
         {/* Photo strip — right on desktop, top on mobile */}
         <ScrollReveal className="order-first md:order-last md:w-[340px] flex-shrink-0">
-          <div className="flex md:flex-col gap-3 overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory md:snap-none">
+          <div className="flex md:flex-col gap-6 overflow-x-auto md:overflow-visible scrollbar-hide snap-x snap-mandatory md:snap-none">
             {[
               { src: aansaBamiyan, alt: "Aansa at the ancient cliffs of Bamiyan, Afghanistan" },
               { src: aansaCapePoint, alt: "Aansa at Cape Point, South Africa" },
@@ -57,7 +57,7 @@ const FounderPage = () => (
                 key={i}
                 src={photo.src}
                 alt={photo.alt}
-                className="flex-shrink-0 w-[260px] md:w-full h-[220px] md:h-[200px] object-cover rounded-[10px] snap-center"
+                className="flex-shrink-0 w-[260px] md:w-full rounded-[10px] snap-center object-contain"
               />
             ))}
           </div>
