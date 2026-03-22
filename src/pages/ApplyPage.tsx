@@ -255,8 +255,8 @@ const ApplyPage = () => {
           <a href="https://wa.link/eag6c7" target="_blank" rel="noopener noreferrer" className="mm-card bg-forest-green text-center py-6">
             <span className="font-body font-semibold text-primary-foreground uppercase tracking-wider text-sm">Message Us on WhatsApp</span>
           </a>
-          <a href="mailto:aansa@meaningfulmiles.travel" className="mm-card text-center py-6" style={{ backgroundColor: "hsl(var(--burnt-orange))" }}>
-            <span className="font-body font-semibold uppercase tracking-wider text-sm" style={{ color: "white" }}>Email Aansa</span>
+          <a href="mailto:hello@meaningfulmiles.travel" className="mm-card text-center py-6" style={{ backgroundColor: "hsl(var(--burnt-orange))" }}>
+            <span className="font-body font-semibold uppercase tracking-wider text-sm" style={{ color: "white" }}>Email Us</span>
           </a>
         </div>
       </section>
