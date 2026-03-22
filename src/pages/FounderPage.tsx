@@ -41,7 +41,7 @@ const FounderPage = () => (
       </div>
     </section>
 
-    <section className="section-padding bg-off-white pt-0">
+    <section className="px-4 md:px-8 pb-8 md:pb-12 bg-off-white">
       <SectionDivider />
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-10 md:gap-14">
         {/* Photo strip — right on desktop, top on mobile */}
