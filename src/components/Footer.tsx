@@ -45,10 +45,10 @@ const Footer = () => (
           <div className="flex flex-col gap-2">
             <Link to="/whats-included" className="font-body text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">What's Included</Link>
             <Link to="/sample-itineraries" className="font-body text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">Sample Itineraries</Link>
+            <Link to="/code-of-conduct" className="font-body text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">Volunteer Code of Conduct</Link>
             <Link to="/visa" className="font-body text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">Visa</Link>
             <Link to="/vaccinations" className="font-body text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">Vaccinations</Link>
             <Link to="/safeguarding" className="font-body text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">Safeguarding & DBS</Link>
-            <Link to="/code-of-conduct" className="font-body text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">Code of Conduct</Link>
           </div>
         </div>
 

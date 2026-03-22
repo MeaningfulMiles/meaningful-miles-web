@@ -21,6 +21,7 @@ const navItems = [
       { label: "Students", path: "/disabilities/students" },
     ],
   },
+  { label: "Safeguarding & DBS", path: "/safeguarding" },
   { label: "The Good-Hearted Soul", path: "/good-hearted-soul" },
   { label: "Your Safety", path: "/safety" },
   { label: "Meet Aansa", path: "/founder" },
@@ -29,10 +30,9 @@ const navItems = [
     children: [
       { label: "What's Included", path: "/whats-included" },
       { label: "Sample Itineraries", path: "/sample-itineraries" },
+      { label: "Volunteer Code of Conduct", path: "/code-of-conduct" },
       { label: "Visa", path: "/visa" },
       { label: "Vaccinations", path: "/vaccinations" },
-      { label: "Safeguarding & DBS", path: "/safeguarding" },
-      { label: "Code of Conduct", path: "/code-of-conduct" },
     ],
   },
 ];
