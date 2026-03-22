@@ -4,6 +4,7 @@ import PageLayout from "@/components/PageLayout";
 import HeroSlider from "@/components/HeroSlider";
 import SectionDivider from "@/components/SectionDivider";
 import ScrollReveal from "@/components/ScrollReveal";
+import PhotoStrip from "@/components/PhotoStrip";
 import { useState, useEffect, useCallback } from "react";
 import { Plane, Shield, Home as HomeIcon, ChevronLeft, ChevronRight } from "lucide-react";
 import heroTajGuests from "@/assets/hero-taj-guests.jpeg";
@@ -69,6 +70,12 @@ const heroSlides = [
     src: heroAnimalSanctuaryFriends,
     alt: "Two Meaningful Miles guests standing together at an animal sanctuary with rescued farm animals behind them.",
     label: "Sanctuary visits that feel personal, warm, and memorable",
+  },
+  {
+    label: "Aansa at the Taj Mahal — Solo. Unhurried. Unforgettable.",
+    alt: "Aansa in pink sitting on a bench with the Taj Mahal reflection pool behind her.",
+    caption: "Solo. Unhurried. Unforgettable.",
+    bg: "#C8B89A",
   },
 ];
 
@@ -273,6 +280,9 @@ const HomePage = () => (
         </div>
       </ScrollReveal>
     </section>
+
+    {/* Photo Strip */}
+    <PhotoStrip />
 
     {/* Itinerary Preview */}
     <section className="section-padding bg-off-white">

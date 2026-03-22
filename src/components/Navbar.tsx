@@ -22,6 +22,7 @@ const navItems = [
     ],
   },
   { label: "Safeguarding & DBS", path: "/safeguarding" },
+  { label: "Where You'll Give", path: "/where-youll-give" },
   { label: "The Good-Hearted Soul", path: "/good-hearted-soul" },
   { label: "Your Safety", path: "/safety" },
   { label: "Meet Aansa", path: "/founder" },
