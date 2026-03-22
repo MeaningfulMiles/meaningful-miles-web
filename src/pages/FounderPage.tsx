@@ -14,7 +14,7 @@ const FounderPage = () => (
     </Helmet>
 
     {/* Taj Mahal Hero Image */}
-    <section className="bg-off-white">
+    <section className="bg-off-white -mt-1">
       <ScrollReveal>
         <div className="max-w-5xl mx-auto px-4 pt-16 md:pt-24">
           <img
