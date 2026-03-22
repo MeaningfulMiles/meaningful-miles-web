@@ -5,7 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import { Link } from "react-router-dom";
 import aansaTajMahal from "@/assets/aansa-taj-mahal.jpg";
-import aansaPortrait from "@/assets/aansa-portrait.jpeg";
+
 import aansaBamiyan from "@/assets/aansa-bamiyan.jpg";
 import aansaCapePoint from "@/assets/aansa-cape-point.jpg";
 import aansaRajasthan from "@/assets/aansa-rajasthan.jpg";
@@ -67,16 +67,9 @@ const FounderPage = () => (
         {/* Bio */}
         <div className="space-y-6 flex-1">
           <ScrollReveal>
-            <div className="flex items-start gap-6">
-              <img
-                src={aansaPortrait}
-                alt="Aansa, founder of Meaningful Miles"
-                className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover flex-shrink-0 shadow-lg"
-              />
-              <p className="pull-quote">
-                "I founded Meaningful Miles after witnessing the profound impact of animal welfare, inclusion and education initiatives in Delhi. I knew I had to share this incredible experience with others."
-              </p>
-            </div>
+            <p className="pull-quote">
+              "I founded Meaningful Miles after witnessing the profound impact of animal welfare, inclusion and education initiatives in Delhi. I knew I had to share this incredible experience with others."
+            </p>
           </ScrollReveal>
 
           <ScrollReveal>
