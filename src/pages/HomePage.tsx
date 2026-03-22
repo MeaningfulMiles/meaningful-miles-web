@@ -263,7 +263,7 @@ const HomePage = () => (
             src={aansaHeadshot}
             alt="Aansa, founder of Meaningful Miles"
             className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover flex-shrink-0 shadow-lg"
-            style={{ objectPosition: "calc(50% + 2.5mm) 50%" }}
+            style={{ objectPosition: "calc(50% - 5mm) 50%" }}
           />
           <div>
             <h3 className="mb-4">Meet Aansa</h3>
