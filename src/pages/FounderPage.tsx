@@ -67,16 +67,9 @@ const FounderPage = () => (
         {/* Bio */}
         <div className="space-y-6 flex-1">
           <ScrollReveal>
-            <div className="flex items-start gap-6">
-              <img
-                src={aansaPortrait}
-                alt="Aansa, founder of Meaningful Miles"
-                className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover flex-shrink-0 shadow-lg"
-              />
-              <p className="pull-quote">
-                "I founded Meaningful Miles after witnessing the profound impact of animal welfare, inclusion and education initiatives in Delhi. I knew I had to share this incredible experience with others."
-              </p>
-            </div>
+            <p className="pull-quote">
+              "I founded Meaningful Miles after witnessing the profound impact of animal welfare, inclusion and education initiatives in Delhi. I knew I had to share this incredible experience with others."
+            </p>
           </ScrollReveal>
 
           <ScrollReveal>
