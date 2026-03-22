@@ -58,6 +58,14 @@ const HeroSlider = ({ slides, interval = 5000, height = "100vh" }: HeroSliderPro
               </span>
             </div>
           )}
+          {/* Caption overlay */}
+          {slide.caption && i === current && (
+            <div className="absolute bottom-16 left-0 right-0 z-10 text-center px-4">
+              <p className="font-display text-2xl md:text-4xl text-white drop-shadow-lg">
+                {slide.caption}
+              </p>
+            </div>
+          )}
         </div>
       ))}
 
