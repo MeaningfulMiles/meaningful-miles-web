@@ -12,7 +12,17 @@ const Footer = () => (
         <p className="font-body text-sm text-primary-foreground/70 mt-1">Travel. Give. Grow.</p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+        {/* Our Charities */}
+        <div>
+          <h4 className="font-body font-semibold text-sm uppercase tracking-wider text-primary-foreground mb-4">
+            Our Charities
+          </h4>
+          <div className="flex flex-col gap-2">
+            <Link to="/where-youll-give" className="font-body text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">Where You'll Give</Link>
+          </div>
+        </div>
+
         {/* Animal Welfare */}
         <div>
           <h4 className="font-body font-semibold text-sm uppercase tracking-wider text-primary-foreground mb-4">
