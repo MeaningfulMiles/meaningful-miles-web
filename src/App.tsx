@@ -28,6 +28,7 @@ import ApplyPage from "./pages/ApplyPage";
 import TestimonialsPage from "./pages/TestimonialsPage";
 import GalleryPage from "./pages/GalleryPage";
 import WhereYoullGivePage from "./pages/WhereYoullGivePage";
+import EducationInitiativesPage from "./pages/EducationInitiativesPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
