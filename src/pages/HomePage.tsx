@@ -8,6 +8,7 @@ import PhotoStrip from "@/components/PhotoStrip";
 import { useState, useEffect, useCallback } from "react";
 import { Plane, Shield, Home as HomeIcon, ChevronLeft, ChevronRight } from "lucide-react";
 import heroTajGuests from "@/assets/hero-taj-guests.jpeg";
+import aansaHeadshot from "@/assets/aansa-headshot.png";
 import heroVetClinic from "@/assets/hero-vet-clinic.jpeg";
 import heroDisabilitiesGroup from "@/assets/hero-disabilities-group.jpeg";
 import heroAansaQutub from "@/assets/hero-aansa-qutub.jpeg";
@@ -258,9 +259,11 @@ const HomePage = () => (
       <SectionDivider />
       <ScrollReveal>
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-10 items-center">
-          <div className="w-48 h-48 md:w-64 md:h-64 rounded-full flex-shrink-0 flex items-center justify-center" style={{ backgroundColor: "#C8B89A" }}>
-            <span className="font-body text-sm text-center px-4" style={{ color: "white" }}>PHOTO: Aansa</span>
-          </div>
+          <img
+            src={aansaHeadshot}
+            alt="Aansa, founder of Meaningful Miles"
+            className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover flex-shrink-0 shadow-lg"
+          />
           <div>
             <h3 className="mb-4">Meet Aansa</h3>
             <p className="pull-quote mb-6">
