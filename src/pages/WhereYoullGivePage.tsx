@@ -289,13 +289,14 @@ const WhereYoullGivePage = () => (
         {/* Downloadable policy link */}
         <ScrollReveal>
           <p className="text-center">
-            <span className="text-burnt-orange font-body font-semibold text-sm italic">
+            <a
+              href="/documents/Child_Protection_Safeguarding_Policy.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-burnt-orange font-body font-semibold text-sm italic hover:underline"
+            >
               Download our Child Protection & Safeguarding Policy (PDF) →
-            </span>
-            <br />
-            <span className="font-body text-xs text-mid-text italic">
-              PDF will be available shortly — please contact Aansa in the meantime.
-            </span>
+            </a>
           </p>
         </ScrollReveal>
       </div>
