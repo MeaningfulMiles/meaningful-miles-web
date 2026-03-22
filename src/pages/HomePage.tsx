@@ -4,6 +4,7 @@ import PageLayout from "@/components/PageLayout";
 import HeroSlider from "@/components/HeroSlider";
 import SectionDivider from "@/components/SectionDivider";
 import ScrollReveal from "@/components/ScrollReveal";
+import PhotoStrip from "@/components/PhotoStrip";
 import { useState, useEffect, useCallback } from "react";
 import { Plane, Shield, Home as HomeIcon, ChevronLeft, ChevronRight } from "lucide-react";
 import heroTajGuests from "@/assets/hero-taj-guests.jpeg";
