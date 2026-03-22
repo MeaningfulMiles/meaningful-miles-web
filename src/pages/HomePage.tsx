@@ -71,12 +71,6 @@ const heroSlides = [
     alt: "Two Meaningful Miles guests standing together at an animal sanctuary with rescued farm animals behind them.",
     label: "Sanctuary visits that feel personal, warm, and memorable",
   },
-  {
-    label: "Aansa at the Taj Mahal — Solo. Unhurried. Unforgettable.",
-    alt: "Aansa in pink sitting on a bench with the Taj Mahal reflection pool behind her.",
-    caption: "Solo. Unhurried. Unforgettable.",
-    bg: "#C8B89A",
-  },
 ];
 
 const galleryImages = [
