@@ -28,6 +28,7 @@ import ApplyPage from "./pages/ApplyPage";
 import TestimonialsPage from "./pages/TestimonialsPage";
 import GalleryPage from "./pages/GalleryPage";
 import WhereYoullGivePage from "./pages/WhereYoullGivePage";
+import EducationInitiativesPage from "./pages/EducationInitiativesPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -68,7 +69,7 @@ const App = () => (
             <Route path="/testimonials" element={<TestimonialsPage />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/where-youll-give" element={<WhereYoullGivePage />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="/education-initiatives" element={<EducationInitiativesPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

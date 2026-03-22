@@ -14,7 +14,7 @@ const Footer = () => (
         <p className="font-body text-sm text-primary-foreground/70 mt-1">Travel. Give. Grow.</p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-8 mb-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-8 gap-8 mb-12">
         {/* Our Charities */}
         <div>
           <h4 className="font-body font-semibold text-sm uppercase tracking-wider text-primary-foreground mb-4">
@@ -38,7 +38,7 @@ const Footer = () => (
           </div>
         </div>
 
-        {/* Disabilities */}
+        {/* Disabilities Empowerment */}
         <div>
           <h4 className="font-body font-semibold text-sm uppercase tracking-wider text-primary-foreground mb-4">
             Disabilities Empowerment
@@ -46,6 +46,22 @@ const Footer = () => (
           <div className="flex flex-col gap-2">
             <Link to="/disabilities/professionals" className={footerLinkClass}>Professionals</Link>
             <Link to="/disabilities/students" className={footerLinkClass}>Students</Link>
+          </div>
+        </div>
+
+        {/* Education Initiatives */}
+        <div>
+          <h4 className="font-body font-semibold text-sm uppercase tracking-wider text-primary-foreground mb-4">
+            Education Initiatives
+          </h4>
+          <div className="flex flex-col gap-2">
+            <Link to="/education-initiatives" className={footerLinkClass}>Teachers & Educators</Link>
+            <Link to="/education-initiatives" className={footerLinkClass}>ESOL/EFL Teachers</Link>
+            <Link to="/education-initiatives" className={footerLinkClass}>Teacher Educators & CPD</Link>
+            <Link to="/education-initiatives" className={footerLinkClass}>Mental Health Professionals</Link>
+            <Link to="/education-initiatives" className={footerLinkClass}>Social Workers</Link>
+            <Link to="/education-initiatives" className={footerLinkClass}>Gap Year Volunteers</Link>
+            <Link to="/safeguarding" className={footerLinkClass}>Safeguarding & DBS</Link>
           </div>
         </div>
 
@@ -57,10 +73,10 @@ const Footer = () => (
           <div className="flex flex-col gap-2">
             <Link to="/where-youll-give#acgs" className={footerLinkClass}>Veterinary Professionals</Link>
             <Link to="/where-youll-give#sarthak" className={footerLinkClass}>Corporate Sabbatical</Link>
-            <Link to="/where-youll-give#project-why" className={footerLinkClass}>Teachers & Educators</Link>
-            <Link to="/where-youll-give#project-why" className={footerLinkClass}>Teacher Educators & CPD</Link>
-            <Link to="/where-youll-give#project-why" className={footerLinkClass}>Mental Health Professionals</Link>
-            <Link to="/where-youll-give#project-why" className={footerLinkClass}>Social Workers</Link>
+            <Link to="/education-initiatives" className={footerLinkClass}>Teachers & Educators</Link>
+            <Link to="/education-initiatives" className={footerLinkClass}>Teacher Educators & CPD</Link>
+            <Link to="/education-initiatives" className={footerLinkClass}>Mental Health Professionals</Link>
+            <Link to="/education-initiatives" className={footerLinkClass}>Social Workers</Link>
             <Link to="/where-youll-give#sarthak" className={footerLinkClass}>Tech & Digital Specialists</Link>
           </div>
         </div>
@@ -74,10 +90,10 @@ const Footer = () => (
             <Link to="/where-youll-give#acgs" className={footerLinkClass}>Vet Students (EMS)</Link>
             <Link to="/sample-itineraries" className={footerLinkClass}>Student Discount Available</Link>
             <Link to="/where-youll-give" className={footerLinkClass}>Gap Year Volunteers</Link>
-            <Link to="/where-youll-give#project-why" className={footerLinkClass}>ESOL/EFL Students</Link>
-            <Link to="/where-youll-give#project-why" className={footerLinkClass}>Teaching Students</Link>
-            <Link to="/where-youll-give#project-why" className={footerLinkClass}>Social Work Students</Link>
-            <Link to="/where-youll-give#project-why" className={footerLinkClass}>Mental Health Students</Link>
+            <Link to="/education-initiatives" className={footerLinkClass}>ESOL/EFL Students</Link>
+            <Link to="/education-initiatives" className={footerLinkClass}>Teaching Students</Link>
+            <Link to="/education-initiatives" className={footerLinkClass}>Social Work Students</Link>
+            <Link to="/education-initiatives" className={footerLinkClass}>Mental Health Students</Link>
           </div>
         </div>
 
@@ -87,9 +103,9 @@ const Footer = () => (
             Need to Know
           </h4>
           <div className="flex flex-col gap-2">
+            <Link to="/code-of-conduct" className={footerLinkClass}>Volunteer Code of Conduct</Link>
             <Link to="/whats-included" className={footerLinkClass}>What's Included</Link>
             <Link to="/sample-itineraries" className={footerLinkClass}>Sample Itineraries</Link>
-            <Link to="/code-of-conduct" className={footerLinkClass}>Volunteer Code of Conduct</Link>
             <Link to="/visa" className={footerLinkClass}>Visa</Link>
             <Link to="/vaccinations" className={footerLinkClass}>Vaccinations</Link>
             <Link to="/safeguarding" className={footerLinkClass}>Safeguarding & DBS</Link>
@@ -102,8 +118,8 @@ const Footer = () => (
             Contact
           </h4>
           <div className="flex flex-col gap-2">
-            <a href="mailto:aansa@meaningfulmiles.travel" className={footerLinkClass}>
-              aansa@meaningfulmiles.travel
+            <a href="mailto:hello@meaningfulmiles.travel" className={footerLinkClass}>
+              hello@meaningfulmiles.travel
             </a>
             <a href="https://wa.link/eag6c7" target="_blank" rel="noopener noreferrer" className={footerLinkClass}>
               WhatsApp
