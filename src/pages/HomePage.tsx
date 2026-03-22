@@ -169,6 +169,9 @@ const HomePage = () => (
           <Link to="/apply" className="btn-primary">Find My Journey →</Link>
           <Link to="/why-choose-us" className="btn-outline-green">Why Choose Us</Link>
         </div>
+        <Link to="/where-youll-give" className="inline-block font-display text-lg sm:text-xl font-bold text-saffron hover:underline tracking-wide uppercase mb-2">
+          Proud Partners of Award-Winning Charities →
+        </Link>
         <p className="font-body text-sm text-mid-text italic">
           Every volunteer generates a social dividend that flows directly to our charity partners.
         </p>
