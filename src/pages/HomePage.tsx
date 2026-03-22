@@ -73,6 +73,11 @@ const heroSlides = [
     alt: "Two Meaningful Miles guests standing together at an animal sanctuary with rescued farm animals behind them.",
     label: "Sanctuary visits that feel personal, warm, and memorable",
   },
+  {
+    src: heroBannerPlayground,
+    alt: "Two women holding a Meaningful Miles banner at a community playground with children playing.",
+    label: "Travel. Give. Grow. — Meaningful Miles in the field",
+  },
 ];
 
 const galleryImages = [
