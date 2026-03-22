@@ -33,7 +33,7 @@ const FounderPage = () => (
       </ScrollReveal>
 
       {/* Counters */}
-      <div className="flex flex-wrap justify-center gap-8 md:gap-16 mt-10 pb-16 md:pb-24 px-4">
+      <div className="flex flex-wrap justify-center gap-8 md:gap-16 mt-10 pb-8 md:pb-12 px-4">
         <AnimatedCounter target={45} prefix="~" label="Countries" color="terracotta-brown" />
         <AnimatedCounter target={95} suffix="%" label="Solo" color="terracotta-brown" />
         <AnimatedCounter target={18} label="Countries Lived & Worked" color="terracotta-brown" />
