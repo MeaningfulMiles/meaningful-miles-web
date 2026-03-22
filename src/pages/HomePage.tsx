@@ -71,12 +71,6 @@ const heroSlides = [
     alt: "Two Meaningful Miles guests standing together at an animal sanctuary with rescued farm animals behind them.",
     label: "Sanctuary visits that feel personal, warm, and memorable",
   },
-  {
-    label: "Aansa at the Taj Mahal — Solo. Unhurried. Unforgettable.",
-    alt: "Aansa in pink sitting on a bench with the Taj Mahal reflection pool behind her.",
-    caption: "Solo. Unhurried. Unforgettable.",
-    bg: "#C8B89A",
-  },
 ];
 
 const galleryImages = [
@@ -175,6 +169,9 @@ const HomePage = () => (
           <Link to="/apply" className="btn-primary">Find My Journey →</Link>
           <Link to="/why-choose-us" className="btn-outline-green">Why Choose Us</Link>
         </div>
+        <Link to="/where-youll-give" className="inline-block font-display text-lg sm:text-xl font-bold text-saffron hover:underline tracking-wide uppercase mb-2">
+          Proud Partners of Award-Winning Charities →
+        </Link>
         <p className="font-body text-sm text-mid-text italic">
           Every volunteer generates a social dividend that flows directly to our charity partners.
         </p>
