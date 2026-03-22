@@ -288,8 +288,6 @@ const HomePage = () => (
       </ScrollReveal>
     </section>
 
-    {/* Photo Strip */}
-    <PhotoStrip />
 
     {/* Itinerary Preview */}
     <section className="section-padding bg-off-white">
