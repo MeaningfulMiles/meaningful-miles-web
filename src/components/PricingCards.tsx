@@ -37,6 +37,24 @@ const PricingCards = ({ showStudentDefault, ctaLabel = "Book Now" }: PricingCard
           </div>
         ))}
       </div>
+
+      {/* Bespoke note */}
+      <p className="font-body text-center italic text-terracotta-brown mt-8 max-w-3xl mx-auto">
+        Every journey is fully bespoke. Duration, charity placement and itinerary are tailored to you — these prices are your starting point, not your ceiling.
+      </p>
+
+      {/* Student discount callout */}
+      <div className="mt-8 rounded-[10px] border-l-4 border-burnt-orange bg-parched-cream p-6 max-w-3xl mx-auto">
+        <h3 className="font-display text-xl mb-2 text-dark-text">Student &amp; EMS Discount Available</h3>
+        <p className="font-body text-dark-text text-[15px] mb-3">
+          Student rates are available across all packages. UK vet students: our registered vets on placement can sign off your official EMS hours in India. Contact us for your bespoke student quote.
+        </p>
+        <Link to="/apply" className="font-body font-semibold text-burnt-orange hover:underline">
+          Get your student quote →
+        </Link>
+      </div>
+
+      {/* Small print */}
       <p className="font-body text-sm text-mid-text text-center mt-6 italic">
         Prices are indicative from prices for the ground package only. International flights and volunteering insurance are the responsibility of the guest. All packages are fully bespoke.
       </p>
