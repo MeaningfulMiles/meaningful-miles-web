@@ -27,6 +27,7 @@ import CodeOfConductPage from "./pages/CodeOfConductPage";
 import ApplyPage from "./pages/ApplyPage";
 import TestimonialsPage from "./pages/TestimonialsPage";
 import GalleryPage from "./pages/GalleryPage";
+import WhereYoullGivePage from "./pages/WhereYoullGivePage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
