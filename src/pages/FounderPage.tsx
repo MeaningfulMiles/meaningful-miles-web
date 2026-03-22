@@ -2,13 +2,9 @@ import { Helmet } from "react-helmet-async";
 import PageLayout from "@/components/PageLayout";
 import SectionDivider from "@/components/SectionDivider";
 import ScrollReveal from "@/components/ScrollReveal";
+import AnimatedCounter from "@/components/AnimatedCounter";
 import { Link } from "react-router-dom";
-
-const stats = [
-  { value: "~45", label: "Countries" },
-  { value: "95%", label: "Solo" },
-  { value: "18", label: "Countries Lived & Worked" },
-];
+import aansaTajMahal from "@/assets/aansa-taj-mahal.jpg";
 
 const FounderPage = () => (
   <PageLayout>
@@ -25,22 +21,34 @@ const FounderPage = () => (
           Nearly 45 countries. 95% solo. 100% unforgettable.
         </p>
       </ScrollReveal>
-      <ScrollReveal delay={0.15}>
-        <div className="flex flex-wrap justify-center gap-8 md:gap-16 mt-10">
-          {stats.map((s) => (
-            <div key={s.label} className="text-center">
-              <span className="font-display text-4xl md:text-5xl text-primary-foreground">{s.value}</span>
-              <p className="font-body text-sm text-primary-foreground/70 mt-1">{s.label}</p>
-            </div>
-          ))}
+      <div className="flex flex-wrap justify-center gap-8 md:gap-16 mt-10">
+        <AnimatedCounter target={45} prefix="~" label="Countries" />
+        <AnimatedCounter target={95} suffix="%" label="Solo" />
+        <AnimatedCounter target={18} label="Countries Lived & Worked" />
+        <AnimatedCounter target={1} label="Untethered Soul" duration={1.5} />
+      </div>
+    </section>
+
+    {/* Taj Mahal Feature Image */}
+    <section className="section-padding bg-off-white pb-8 md:pb-12">
+      <ScrollReveal>
+        <div className="max-w-4xl mx-auto">
+          <img
+            src={aansaTajMahal}
+            alt="Aansa sitting on the bench at the Taj Mahal reflection pool"
+            className="w-full rounded-[10px] object-cover shadow-lg"
+          />
+          <p className="font-display italic text-lg md:text-xl mt-4 text-center" style={{ color: "hsl(var(--burnt-orange))" }}>
+            "This bench is waiting for you."
+          </p>
         </div>
       </ScrollReveal>
     </section>
 
-    <section className="section-padding bg-off-white">
+    <section className="section-padding bg-off-white pt-0">
       <SectionDivider />
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-10 md:gap-14">
-        {/* Portrait placeholder — right on desktop, top on mobile */}
+        {/* Portrait placeholder */}
         <ScrollReveal className="order-first md:order-last md:w-[340px] flex-shrink-0">
           <div className="w-full aspect-[3/4] rounded-[10px] flex items-center justify-center" style={{ backgroundColor: "#C8B89A" }}>
             <span className="font-body text-sm text-center px-4" style={{ color: "white" }}>
