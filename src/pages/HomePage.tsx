@@ -8,6 +8,7 @@ import PhotoStrip from "@/components/PhotoStrip";
 import { useState, useEffect, useCallback } from "react";
 import { Plane, Shield, Home as HomeIcon, ChevronLeft, ChevronRight } from "lucide-react";
 import heroTajGuests from "@/assets/hero-taj-guests.jpeg";
+import aansaHeadshot from "@/assets/aansa-headshot.png";
 import heroVetClinic from "@/assets/hero-vet-clinic.jpeg";
 import heroDisabilitiesGroup from "@/assets/hero-disabilities-group.jpeg";
 import heroAansaQutub from "@/assets/hero-aansa-qutub.jpeg";
