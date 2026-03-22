@@ -6,6 +6,7 @@ interface Slide {
   bg?: string;
   src?: string;
   alt?: string;
+  caption?: string;
 }
 
 interface HeroSliderProps {
