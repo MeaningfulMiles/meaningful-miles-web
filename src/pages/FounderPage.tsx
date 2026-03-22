@@ -5,6 +5,10 @@ import ScrollReveal from "@/components/ScrollReveal";
 import AnimatedCounter from "@/components/AnimatedCounter";
 import { Link } from "react-router-dom";
 import aansaTajMahal from "@/assets/aansa-taj-mahal.jpg";
+import aansaBamiyan from "@/assets/aansa-bamiyan.jpg";
+import aansaCapePoint from "@/assets/aansa-cape-point.jpg";
+import aansaRajasthan from "@/assets/aansa-rajasthan.jpg";
+import aansaDurdleDoor from "@/assets/aansa-durdle-door.jpg";
 
 const FounderPage = () => (
   <PageLayout>
