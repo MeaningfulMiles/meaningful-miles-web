@@ -30,7 +30,7 @@ const navItems = [
   {
     label: "Need to Know",
     children: [
-      { label: "What's Included", path: "/whats-included" },
+      
       { label: "Sample Itineraries", path: "/sample-itineraries" },
       { label: "Volunteer Code of Conduct", path: "/code-of-conduct" },
       { label: "Visa", path: "/visa" },

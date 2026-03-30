@@ -104,7 +104,7 @@ const Footer = () => (
           </h4>
           <div className="flex flex-col gap-2">
             <Link to="/code-of-conduct" className={footerLinkClass}>Volunteer Code of Conduct</Link>
-            <Link to="/whats-included" className={footerLinkClass}>What's Included</Link>
+            
             <Link to="/sample-itineraries" className={footerLinkClass}>Sample Itineraries</Link>
             <Link to="/visa" className={footerLinkClass}>Visa</Link>
             <Link to="/vaccinations" className={footerLinkClass}>Vaccinations</Link>
