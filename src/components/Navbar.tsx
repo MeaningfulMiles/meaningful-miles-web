@@ -66,11 +66,11 @@ const Navbar = () => {
         <div className="max-w-[1400px] mx-auto px-4 md:px-8 flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex flex-col leading-tight">
-            <span className="font-display text-xl lg:text-2xl text-forest-green font-medium">
+            <span className="font-display text-xl lg:text-2xl text-forest-green/70 font-normal italic">
               Meaningful Miles
             </span>
-            <span className="font-body text-[11px] text-mid-text tracking-wide">
-              Travel. Give. Grow.
+            <span className="font-display text-[13px] lg:text-[15px] text-forest-green font-semibold tracking-wide">
+              Travel <span className="text-burnt-orange mx-0.5">·</span> Give <span className="text-burnt-orange mx-0.5">·</span> Grow
             </span>
           </Link>
 
