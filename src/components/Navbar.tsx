@@ -74,52 +74,8 @@ const Navbar = () => {
             </span>
           </Link>
 
-          {/* Desktop Nav */}
-          <div className="hidden xl:flex items-center gap-1">
-            {navItems.map((item) =>
-              item.children ? (
-                <div
-                  key={item.label}
-                  className="relative group"
-                  onMouseEnter={() => setOpenDropdown(item.label)}
-                  onMouseLeave={() => setOpenDropdown(null)}
-                >
-                  <button className="flex items-center gap-1 px-3 py-2 text-[14px] font-body text-forest-green hover:text-burnt-orange transition-colors">
-                    {item.label}
-                    <ChevronDown className="w-3 h-3" />
-                  </button>
-                  {openDropdown === item.label && (
-                    <div className="absolute top-full left-0 bg-off-white rounded-lg shadow-lg py-2 min-w-[220px] border border-border">
-                      {item.children.map((child) => (
-                        <Link
-                          key={child.path}
-                          to={child.path}
-                          className="block px-4 py-2 text-[14px] font-body text-forest-green hover:text-burnt-orange hover:bg-parched-cream transition-colors"
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ) : (
-                <Link
-                  key={item.path}
-                  to={item.path!}
-                  className={`px-3 py-2 text-[14px] font-body transition-colors ${
-                    location.pathname === item.path
-                      ? "text-burnt-orange"
-                      : "text-forest-green hover:text-burnt-orange"
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              )
-            )}
-            <Link to="/apply" className="btn-primary ml-3 text-[13px] py-2 px-5">
-              Book Now
-            </Link>
-          </div>
+          {/* Book Now + Mobile toggle */}
+          <div className="flex items-center gap-3">
 
           {/* Mobile toggle */}
           <button
