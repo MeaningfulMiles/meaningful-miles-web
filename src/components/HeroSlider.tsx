@@ -69,31 +69,35 @@ const HeroSlider = ({ slides, interval = 5000, height = "100vh" }: HeroSliderPro
         </div>
       ))}
 
-      <button
-        onClick={prev}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-off-white/80 flex items-center justify-center hover:bg-off-white transition-colors"
-        aria-label="Previous slide"
-      >
-        <ChevronLeft className="w-5 h-5 text-forest-green" />
-      </button>
-      <button
-        onClick={next}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-off-white/80 flex items-center justify-center hover:bg-off-white transition-colors"
-        aria-label="Next slide"
-      >
-        <ChevronRight className="w-5 h-5 text-forest-green" />
-      </button>
-
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
-        {slides.map((_, i) => (
+      {slides.length > 1 && (
+        <>
           <button
-            key={i}
-            onClick={() => setCurrent(i)}
-            className={`w-3 h-3 rounded-full transition-colors ${i === current ? "bg-off-white" : "bg-off-white/50"}`}
-            aria-label={`Go to slide ${i + 1}`}
-          />
-        ))}
-      </div>
+            onClick={prev}
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-off-white/80 flex items-center justify-center hover:bg-off-white transition-colors"
+            aria-label="Previous slide"
+          >
+            <ChevronLeft className="w-5 h-5 text-forest-green" />
+          </button>
+          <button
+            onClick={next}
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-off-white/80 flex items-center justify-center hover:bg-off-white transition-colors"
+            aria-label="Next slide"
+          >
+            <ChevronRight className="w-5 h-5 text-forest-green" />
+          </button>
+
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+            {slides.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setCurrent(i)}
+                className={`w-3 h-3 rounded-full transition-colors ${i === current ? "bg-off-white" : "bg-off-white/50"}`}
+                aria-label={`Go to slide ${i + 1}`}
+              />
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 };
