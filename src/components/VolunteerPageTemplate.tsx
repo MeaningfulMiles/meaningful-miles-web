@@ -54,7 +54,11 @@ const VolunteerPageTemplate = ({
       <div className="max-w-5xl mx-auto space-y-12">
         <ScrollReveal>
           <h2 className="mb-4">What You'll Do</h2>
-          <p className="font-body">{whatYoullDo}</p>
+          <div className="font-body space-y-4">
+            {whatYoullDo.split('\n\n').map((para, i) => (
+              <p key={i}>{para}</p>
+            ))}
+          </div>
         </ScrollReveal>
 
         <ScrollReveal>
