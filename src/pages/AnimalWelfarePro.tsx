@@ -1,13 +1,11 @@
 import VolunteerPageTemplate from "@/components/VolunteerPageTemplate";
+import animalWelfareProHero from "@/assets/animal-welfare-pro-hero.jpg";
 
 const AnimalWelfarePro = () => (
   <VolunteerPageTemplate
     title="Animal Welfare for Vet Professionals — Meaningful Miles"
     metaDesc="Veterinary sabbaticals in Delhi. Clinical volunteer work at award-winning animal shelters with full ground logistics, accommodation, and Taj Mahal included."
-    heroSlides={[
-      { label: "HERO: Vet professional treating animal — clinical, compassionate" },
-      { label: "HERO: Delhi animal shelter — clean, hopeful" },
-    ]}
+    heroSlides={[{ src: animalWelfareProHero, alt: "Volunteer with rescue horse at Delhi animal shelter", label: "Vet Professionals" }]}
     h1="The Sabbatical That Matters"
     h3="For veterinary professionals seeking purpose, pause, and perspective"
     introText="Step away from your practice and into something extraordinary. Work alongside award-winning Delhi animal shelters, bringing your clinical skills where they're needed most — while we handle every logistical detail."
