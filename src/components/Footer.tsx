@@ -8,10 +8,10 @@ const Footer = () => (
     <div className="max-w-[1400px] mx-auto px-4 md:px-8 py-12 md:py-16">
       {/* Logo */}
       <div className="mb-10">
-        <span className="font-display text-2xl text-primary-foreground font-medium">
+        <span className="font-display text-2xl text-primary-foreground/70 font-normal italic">
           Meaningful Miles
         </span>
-        <p className="font-body text-sm text-primary-foreground/70 mt-1">Travel. Give. Grow.</p>
+        <p className="font-display text-sm text-primary-foreground font-semibold tracking-wide mt-1">Travel <span className="text-burnt-orange mx-0.5">·</span> Give <span className="text-burnt-orange mx-0.5">·</span> Grow</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-8 gap-8 mb-12">
