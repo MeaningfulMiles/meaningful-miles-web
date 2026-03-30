@@ -300,9 +300,9 @@ const HomePage = () => (
       </ScrollReveal>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {[
-          { weeks: "2-Week", price: "£1,250", items: ["Days 1–2: Arrival, airport pickup, welcome orientation", "Days 3–9: Volunteer placement at NGO partner", "Days 10–11: Delhi sightseeing curated to your interests", "Day 12: Agra — Taj Mahal & Agra Fort", "Days 13–14: Wrap-up & departure"], popular: false },
-          { weeks: "3-Week", price: "£1,750", items: ["Days 1–3: Arrival, orientation, cultural immersion", "Days 4–16: Volunteer placement at NGO partner", "Days 17–19: Delhi sightseeing curated to your interests", "Day 20: Agra — Taj Mahal & Agra Fort", "Days 20–21: Wrap-up & departure"], popular: true },
-          { weeks: "4-Week", price: "£2,250", items: ["Days 1–3: Arrival, full orientation, city familiarisation", "Days 4–22: Volunteer placement at NGO partner", "Days 23–26: Extended Delhi sightseeing + Agra", "Days 27–28: Rest, farewell dinner, departure", "Longer stays warmly accommodated"], popular: false },
+          { weeks: "2-Week", price: "£1,050", items: ["Days 1–2: Arrival, airport pickup, welcome orientation", "Days 3–9: Volunteer placement at NGO partner", "Days 10–11: Delhi sightseeing curated to your interests", "Day 12: Agra — Taj Mahal & Agra Fort", "Days 13–14: Wrap-up & departure"], popular: false },
+          { weeks: "3-Week", price: "£1,350", items: ["Days 1–3: Arrival, orientation, cultural immersion", "Days 4–16: Volunteer placement at NGO partner", "Days 17–19: Delhi sightseeing curated to your interests", "Day 20: Agra — Taj Mahal & Agra Fort", "Days 20–21: Wrap-up & departure"], popular: true },
+          { weeks: "4-Week", price: "£1,650", items: ["Days 1–3: Arrival, full orientation, city familiarisation", "Days 4–22: Volunteer placement at NGO partner", "Days 23–26: Extended Delhi sightseeing + Agra", "Days 27–28: Rest, farewell dinner, departure", "Longer stays warmly accommodated"], popular: false },
         ].map((c, i) => (
           <ScrollReveal key={c.weeks} delay={i * 0.1}>
             <div className={`mm-card h-full flex flex-col relative ${c.popular ? "ring-2 ring-burnt-orange" : ""}`}>
