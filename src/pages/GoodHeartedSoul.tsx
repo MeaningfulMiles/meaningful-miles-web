@@ -1,10 +1,11 @@
 import VolunteerPageTemplate from "@/components/VolunteerPageTemplate";
+import goodHeartedHero from "@/assets/good-hearted-soul-hero.jpg";
 
 const GoodHeartedSoul = () => (
   <VolunteerPageTemplate
     title="General Volunteering India — The Good-Hearted Soul — Meaningful Miles"
     metaDesc="No specialism required. Volunteer in Delhi with full support, accommodation, meals and Taj Mahal sightseeing included. Give back while experiencing India."
-    heroSlides={[{ label: "HERO: Volunteer smiling in vibrant Delhi — genuine, joyful" }]}
+    heroSlides={[{ src: goodHeartedHero, alt: "Meaningful Miles volunteers smiling together in Delhi", label: "Good-Hearted Soul volunteers" }]}
     h1="No Specialism Required. Just You."
     h3="For generous souls who want to give time, see India, and grow"
     introText="You don't need a professional qualification to make a difference. You just need heart, curiosity, and the willingness to show up. Choose to support our animal welfare or disabilities partner — we'll match you to where your presence will matter most."
