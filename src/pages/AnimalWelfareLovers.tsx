@@ -1,10 +1,11 @@
 import VolunteerPageTemplate from "@/components/VolunteerPageTemplate";
+import animalLoversHero from "@/assets/animal-lovers-hero.jpg";
 
 const AnimalWelfareLovers = () => (
   <VolunteerPageTemplate
     title="Animal Welfare Volunteering for Animal Lovers — Meaningful Miles"
     metaDesc="No veterinary degree needed. Volunteer at Delhi animal shelters, help rescued street dogs and cats, with full support and Taj Mahal included."
-    heroSlides={[{ label: "HERO: Animal lover cuddling rescued dog — pure joy" }]}
+    heroSlides={[{ src: animalLoversHero, alt: "Meaningful Miles volunteers with rescued dogs at Delhi animal shelter", label: "Animal Lovers volunteers" }]}
     h1="You Don't Need a Degree to Make a Difference"
     h3="For animal lovers who want to give time, energy, and heart"
     introText="If you love animals and want to make a tangible difference, this is your journey. Work alongside the incredible teams at Delhi's animal shelters — feeding, walking, socialising, and simply being present for animals who need it."
