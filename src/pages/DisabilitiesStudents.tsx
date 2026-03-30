@@ -1,10 +1,11 @@
 import VolunteerPageTemplate from "@/components/VolunteerPageTemplate";
+import disabilitiesStudentsHero from "@/assets/disabilities-students-hero.png";
 
 const DisabilitiesStudents = () => (
   <VolunteerPageTemplate
     title="Disability Students Volunteering India — Meaningful Miles"
     metaDesc="International supervised practice for disability students in Delhi. Full support, accommodation, sightseeing and Taj Mahal included."
-    heroSlides={[{ label: "HERO: Disability student in supervised placement — purposeful, engaged" }]}
+    heroSlides={[{ src: disabilitiesStudentsHero, alt: "Meaningful Miles volunteers playing Jenga with children in Delhi classroom", label: "Disabilities Students" }]}
     h1="Your Placement. Your Purpose."
     h3="For students in adult disability disciplines seeking international supervised practice"
     introText="Take your studies beyond the classroom. A supervised placement in Delhi, working alongside experienced professionals at our partner disability NGO — gaining international practice experience that sets you apart."
