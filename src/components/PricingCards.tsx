@@ -7,9 +7,9 @@ interface PricingCardsProps {
 
 const PricingCards = ({ showStudentDefault, ctaLabel = "Book Now" }: PricingCardsProps) => {
   const cards = [
-    { weeks: 2, price: "£1,250", popular: false },
-    { weeks: 3, price: "£1,750", popular: true },
-    { weeks: 4, price: "£2,250", popular: false },
+    { weeks: 2, price: "£1,050", popular: false },
+    { weeks: 3, price: "£1,350", popular: true },
+    { weeks: 4, price: "£1,650", popular: false },
   ];
 
   return (

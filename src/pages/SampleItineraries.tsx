@@ -66,7 +66,7 @@ const SampleItineraries = () => (
         <ScrollReveal>
           <SampleItinerary
             title="2-Week Journey"
-            price="£1,250"
+            price="£1,050"
             track="Animal Welfare Track"
             items={[
               { day: "Days 1–2", desc: "Arrival · Airport pickup · Welcome orientation · Cultural briefing · Rest and settle in" },
@@ -83,7 +83,7 @@ const SampleItineraries = () => (
         <ScrollReveal>
           <SampleItinerary
             title="3-Week Journey"
-            price="£1,750"
+            price="£1,350"
             track="Disabilities Track"
             popular
             items={[
@@ -101,7 +101,7 @@ const SampleItineraries = () => (
         <ScrollReveal>
           <SampleItinerary
             title="4-Week Journey"
-            price="£2,250"
+            price="£1,650"
             track="Good-Hearted Soul Track"
             items={[
               { day: "Days 1–3", desc: "Arrival · full orientation · city familiarisation walk with Meaningful Miles host" },
