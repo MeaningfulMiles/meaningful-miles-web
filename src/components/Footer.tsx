@@ -125,10 +125,10 @@ const Footer = () => (
               WhatsApp
             </a>
             <div className="flex gap-3 mt-3">
-              <a href="https://www.facebook.com/meaningfulmiles.travel" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+              <a href="https://www.facebook.com/meaningfulmiles.travel/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://www.instagram.com/meaningfulmiles.travel" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
+              <a href="https://www.instagram.com/meaningfulmiles.travel/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
               <a href="https://www.linkedin.com/company/meaningful-miles-travel/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
