@@ -1,10 +1,11 @@
 import VolunteerPageTemplate from "@/components/VolunteerPageTemplate";
+import vetStudentsHero from "@/assets/vet-students-hero.png";
 
 const AnimalWelfareStudents = () => (
   <VolunteerPageTemplate
     title="Veterinary EMS in India — Meaningful Miles"
     metaDesc="Supervised veterinary EMS and clinical placements in Delhi animal shelters. Fully supported with accommodation, meals, transport and Taj Mahal day trip."
-    heroSlides={[{ label: "HERO: Vet student with stethoscope — focused, engaged" }]}
+    heroSlides={[{ src: vetStudentsHero, alt: "Vet student bandaging a dog alongside Indian veterinarian", label: "Vet Students EMS" }]}
     h1="Veterinary EMS in India"
     h3="Supervised clinical placements for EMS and clinical hours"
     introText="Gain invaluable clinical experience in one of the world's most unique veterinary environments — the animal shelters of Delhi. Every logistical detail is handled so you can focus entirely on learning."
