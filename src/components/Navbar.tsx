@@ -87,7 +87,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="fixed inset-0 z-40 bg-forest-green flex flex-col pt-20 overflow-y-auto xl:hidden">
+        <div className="fixed inset-0 z-40 bg-forest-green flex flex-col pt-20 overflow-y-auto">
           <div className="flex flex-col px-8 py-6 gap-1">
             {navItems.map((item) =>
               item.children ? (
