@@ -134,9 +134,6 @@ const Footer = () => (
               <a href="https://www.linkedin.com/company/meaningful-miles-travel/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="https://www.tiktok.com/@meaningfulmiles.travel" target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="text-primary-foreground/70 hover:text-primary-foreground transition-colors">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1 0-5.78 2.92 2.92 0 0 1 .88.13v-3.5a6.37 6.37 0 0 0-.88-.07 6.34 6.34 0 0 0 0 12.68 6.34 6.34 0 0 0 6.34-6.34V9.05a8.27 8.27 0 0 0 3.76.92V6.69z"/></svg>
-              </a>
             </div>
           </div>
         </div>
