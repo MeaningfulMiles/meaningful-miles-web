@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 interface VolunteerPageProps {
   title: string;
   metaDesc: string;
-  heroSlides: { label: string }[];
+  heroSlides: { label: string; src?: string; alt?: string }[];
   h1: string;
   h3: string;
   introText: string;
