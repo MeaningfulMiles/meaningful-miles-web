@@ -74,13 +74,10 @@ const Navbar = () => {
             </span>
           </Link>
 
-          {/* Book Now + Mobile toggle */}
-          <div className="flex items-center gap-3">
-
-          {/* Mobile toggle */}
+          {/* Menu toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="xl:hidden w-10 h-10 flex items-center justify-center text-forest-green"
+            className="w-10 h-10 flex items-center justify-center text-forest-green"
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
