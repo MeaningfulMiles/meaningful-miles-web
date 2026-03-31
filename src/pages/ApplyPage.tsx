@@ -30,6 +30,7 @@ const ApplyPage = () => {
     e.preventDefault();
     setSubmitted(true);
     trackLeadFormSubmit();
+  };
 
   if (submitted) {
     return (
