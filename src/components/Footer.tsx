@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { trackEmailClick, trackWhatsAppClick } from "@/lib/analytics";
 
 const footerLinkClass = "font-body text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors";
 
