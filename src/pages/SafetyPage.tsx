@@ -4,6 +4,7 @@ import HeroSlider from "@/components/HeroSlider";
 import SectionDivider from "@/components/SectionDivider";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Link } from "react-router-dom";
+import { trackCtaPlanClick } from "@/lib/analytics";
 import { ExternalLink } from "lucide-react";
 import safetyAirportWelcome from "@/assets/safety-airport-welcome.png";
 import safetyCatSanctuary from "@/assets/safety-cat-sanctuary.jpeg";
