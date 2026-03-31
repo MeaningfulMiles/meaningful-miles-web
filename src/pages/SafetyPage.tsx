@@ -114,7 +114,7 @@ const SafetyPage = () => (
 
       <ScrollReveal>
         <div className="text-center">
-          <Link to="/apply" className="btn-primary">Start My Journey →</Link>
+          <Link to="/apply" onClick={() => trackCtaPlanClick("Start My Journey")} className="btn-primary">Start My Journey →</Link>
         </div>
       </ScrollReveal>
     </section>

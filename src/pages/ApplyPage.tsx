@@ -253,10 +253,10 @@ const ApplyPage = () => {
 
         {/* Contact tiles */}
         <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
-          <a href="https://wa.link/eag6c7" target="_blank" rel="noopener noreferrer" className="mm-card bg-forest-green text-center py-6">
+          <a href="https://wa.link/eag6c7" target="_blank" rel="noopener noreferrer" onClick={() => trackWhatsAppClick("apply_page")} className="mm-card bg-forest-green text-center py-6">
             <span className="font-body font-semibold text-primary-foreground uppercase tracking-wider text-sm">Message Us on WhatsApp</span>
           </a>
-          <a href="mailto:hello@meaningfulmiles.travel" className="mm-card text-center py-6" style={{ backgroundColor: "hsl(var(--burnt-orange))" }}>
+          <a href="mailto:hello@meaningfulmiles.travel" onClick={() => trackEmailClick("apply_page")} className="mm-card text-center py-6" style={{ backgroundColor: "hsl(var(--burnt-orange))" }}>
             <span className="font-body font-semibold uppercase tracking-wider text-sm" style={{ color: "white" }}>Email Us</span>
           </a>
         </div>
