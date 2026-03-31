@@ -29,7 +29,7 @@ const ApplyPage = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
-  };
+    trackLeadFormSubmit();
 
   if (submitted) {
     return (
