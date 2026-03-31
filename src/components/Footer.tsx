@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { trackEmailClick, trackWhatsAppClick } from "@/lib/analytics";
 
 const footerLinkClass = "font-body text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors";
 
@@ -118,10 +119,10 @@ const Footer = () => (
             Contact
           </h4>
           <div className="flex flex-col gap-2">
-            <a href="mailto:hello@meaningfulmiles.travel" className={footerLinkClass}>
+            <a href="mailto:hello@meaningfulmiles.travel" onClick={() => trackEmailClick("footer")} className={footerLinkClass}>
               hello@meaningfulmiles.travel
             </a>
-            <a href="https://wa.link/eag6c7" target="_blank" rel="noopener noreferrer" className={footerLinkClass}>
+            <a href="https://wa.link/eag6c7" target="_blank" rel="noopener noreferrer" onClick={() => trackWhatsAppClick("footer")} className={footerLinkClass}>
               WhatsApp
             </a>
             <div className="flex gap-3 mt-3">

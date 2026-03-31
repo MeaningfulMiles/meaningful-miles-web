@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { trackCtaPlanClick, trackWhatsAppClick } from "@/lib/analytics";
 import { Helmet } from "react-helmet-async";
 import PageLayout from "@/components/PageLayout";
 import HeroSlider from "@/components/HeroSlider";
@@ -354,8 +355,8 @@ const HomePage = () => (
           Places are limited to ensure every guest receives the personal experience they deserve. Reach out today — we'll design your journey together.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link to="/apply" className="btn-primary">Start My Journey →</Link>
-          <a href="https://wa.link/eag6c7" target="_blank" rel="noopener noreferrer" className="btn-outline-white">
+          <Link to="/apply" onClick={() => trackCtaPlanClick("Start My Journey")} className="btn-primary">Start My Journey →</Link>
+          <a href="https://wa.link/eag6c7" target="_blank" rel="noopener noreferrer" onClick={() => trackWhatsAppClick("homepage_cta")} className="btn-outline-white">
             WhatsApp Us
           </a>
         </div>

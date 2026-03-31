@@ -1,4 +1,5 @@
 import whatsappIcon from "@/assets/whatsapp-icon.png";
+import { trackWhatsAppClick } from "@/lib/analytics";
 
 const WhatsAppButton = () => (
   <a
@@ -6,6 +7,7 @@ const WhatsAppButton = () => (
     target="_blank"
     rel="noopener noreferrer"
     title="WhatsApp us now"
+    onClick={() => trackWhatsAppClick("floating_button")}
     className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform group"
   >
     <img src={whatsappIcon} alt="WhatsApp us now" className="w-full h-full rounded-full" />
