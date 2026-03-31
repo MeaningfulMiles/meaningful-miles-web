@@ -4,6 +4,7 @@ import SectionDivider from "@/components/SectionDivider";
 import ScrollReveal from "@/components/ScrollReveal";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { trackLeadFormSubmit, trackWhatsAppClick, trackEmailClick } from "@/lib/analytics";
 
 const volunteeringOptions = [
   "Animal Welfare — Veterinary Professional",
