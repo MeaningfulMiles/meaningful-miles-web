@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { trackCtaPlanClick, trackWhatsAppClick } from "@/lib/analytics";
 import { Helmet } from "react-helmet-async";
 import PageLayout from "@/components/PageLayout";
 import HeroSlider from "@/components/HeroSlider";
