@@ -12,7 +12,7 @@ import aansaHeadshot from "@/assets/aansa-headshot.png";
 import heroVetClinic from "@/assets/hero-vet-clinic.jpeg";
 import heroDisabilitiesGroup from "@/assets/hero-disabilities-group.jpeg";
 import heroAansaQutub from "@/assets/hero-aansa-qutub.jpeg";
-import heroWelcomeMeeting from "@/assets/hero-welcome-meeting.jpeg";
+import heroWelcomeMeeting from "@/assets/special-needs-cafe.png";
 import heroAnimalSanctuary from "@/assets/hero-animal-sanctuary.jpeg";
 import heroOldDelhiMarket from "@/assets/hero-old-delhi-market.png";
 import heroBannerPlayground from "@/assets/education-banner-playground.png";
