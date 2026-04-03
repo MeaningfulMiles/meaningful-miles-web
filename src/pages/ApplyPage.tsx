@@ -38,6 +38,7 @@ const inputClass = "w-full rounded-lg border border-border bg-off-white px-3 py-
 const labelClass = "font-body text-sm font-semibold text-forest-green block mb-1";
 
 const ApplyPage = () => {
+  const [passportExpiry, setPassportExpiry] = useState("");
   const [preference, setPreference] = useState("");
   const [hasDbs, setHasDbs] = useState("");
   const [dbsLevel, setDbsLevel] = useState("");
@@ -50,6 +51,12 @@ const ApplyPage = () => {
   const [interests, setInterests] = useState<string[]>([]);
   const [otherInterest, setOtherInterest] = useState("");
   const [showOtherInterest, setShowOtherInterest] = useState(false);
+
+  const passportWarning = useMemo(() => {
+    if (!passportExpiry) return false;
+    const expiry = parseISO(passportExpiry);
+    return isBefore(expiry, addMonths(new Date(), 6));
+  }, [passportExpiry]);
   const [submitted, setSubmitted] = useState(false);
 
   const toggleInterest = (interest: string) => {
