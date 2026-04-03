@@ -305,20 +305,36 @@ const ApplyPage = () => {
             </div>
           </div>
 
-          {/* ── Emergency Contact ── */}
-          <h3 className="pt-4">Emergency Contact</h3>
+          {/* ── Emergency Contacts ── */}
+          <h3 className="pt-4">Emergency Contact 1</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
-              <label className={labelClass}>Name</label>
-              <input className={inputClass} />
+              <label className={labelClass}>Name *</label>
+              <input required className={inputClass} />
             </div>
             <div>
-              <label className={labelClass}>Relationship</label>
-              <input className={inputClass} />
+              <label className={labelClass}>Relationship *</label>
+              <input required className={inputClass} />
             </div>
             <div>
-              <label className={labelClass}>Phone</label>
-              <input type="tel" className={inputClass} />
+              <label className={labelClass}>Phone *</label>
+              <input required type="tel" className={inputClass} />
+            </div>
+          </div>
+
+          <h3 className="pt-2">Emergency Contact 2</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div>
+              <label className={labelClass}>Name *</label>
+              <input required className={inputClass} />
+            </div>
+            <div>
+              <label className={labelClass}>Relationship *</label>
+              <input required className={inputClass} />
+            </div>
+            <div>
+              <label className={labelClass}>Phone *</label>
+              <input required type="tel" className={inputClass} />
             </div>
           </div>
 
