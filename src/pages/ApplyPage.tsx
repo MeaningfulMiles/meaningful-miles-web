@@ -154,6 +154,22 @@ const ApplyPage = () => {
             </div>
           </div>
 
+          {/* ── Passport Expiry ── */}
+          <div>
+            <label className={labelClass}>Passport Expiry Date</label>
+            <input
+              type="date"
+              value={passportExpiry}
+              onChange={(e) => setPassportExpiry(e.target.value)}
+              className={inputClass}
+            />
+            {passportWarning && (
+              <p className="font-body text-sm text-destructive mt-1 font-semibold">
+                ⚠ Your passport must be valid for at least 6 months from your travel date to obtain an Indian visa. Please renew your passport before applying.
+              </p>
+            )}
+          </div>
+
           {/* ── Volunteering Preference ── */}
           <div>
             <label className={labelClass}>Volunteering Preference *</label>
