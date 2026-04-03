@@ -132,7 +132,7 @@ const Navbar = () => {
           </div>
           <div className="px-8 pb-8 mt-auto">
             <Link to="/apply" className="btn-primary w-full text-center block">
-              Book Now
+              Register My Interest
             </Link>
           </div>
         </div>
