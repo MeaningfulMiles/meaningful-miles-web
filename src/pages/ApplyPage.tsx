@@ -18,7 +18,7 @@ const volunteeringOptions = [
 ];
 
 const isPeopleFacing = (v: string) =>
-  v.includes("Disabilities") || v === "The Good-Hearted Soul";
+  v.includes("Disabilities") || v.includes("Education") || v === "The Good-Hearted Soul";
 
 const interestOptions = [
   "History & heritage",
