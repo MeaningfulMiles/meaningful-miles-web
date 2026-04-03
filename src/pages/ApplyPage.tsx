@@ -2,7 +2,8 @@ import { Helmet } from "react-helmet-async";
 import PageLayout from "@/components/PageLayout";
 import SectionDivider from "@/components/SectionDivider";
 import ScrollReveal from "@/components/ScrollReveal";
-import { useState } from "react";
+import { useState, useMemo } from "react";
+import { addMonths, isBefore, parseISO } from "date-fns";
 import { Link } from "react-router-dom";
 import { trackLeadFormSubmit, trackWhatsAppClick, trackEmailClick } from "@/lib/analytics";
 
@@ -17,7 +18,7 @@ const volunteeringOptions = [
 ];
 
 const isPeopleFacing = (v: string) =>
-  v.includes("Disabilities") || v === "The Good-Hearted Soul";
+  v.includes("Disabilities") || v.includes("Education") || v === "The Good-Hearted Soul";
 
 const interestOptions = [
   "History & heritage",
@@ -37,6 +38,7 @@ const inputClass = "w-full rounded-lg border border-border bg-off-white px-3 py-
 const labelClass = "font-body text-sm font-semibold text-forest-green block mb-1";
 
 const ApplyPage = () => {
+  const [passportExpiry, setPassportExpiry] = useState("");
   const [preference, setPreference] = useState("");
   const [hasDbs, setHasDbs] = useState("");
   const [dbsLevel, setDbsLevel] = useState("");
@@ -49,6 +51,12 @@ const ApplyPage = () => {
   const [interests, setInterests] = useState<string[]>([]);
   const [otherInterest, setOtherInterest] = useState("");
   const [showOtherInterest, setShowOtherInterest] = useState(false);
+
+  const passportWarning = useMemo(() => {
+    if (!passportExpiry) return false;
+    const expiry = parseISO(passportExpiry);
+    return isBefore(expiry, addMonths(new Date(), 6));
+  }, [passportExpiry]);
   const [submitted, setSubmitted] = useState(false);
 
   const toggleInterest = (interest: string) => {
@@ -146,6 +154,22 @@ const ApplyPage = () => {
             </div>
           </div>
 
+          {/* ── Passport Expiry ── */}
+          <div>
+            <label className={labelClass}>Passport Expiry Date</label>
+            <input
+              type="date"
+              value={passportExpiry}
+              onChange={(e) => setPassportExpiry(e.target.value)}
+              className={inputClass}
+            />
+            {passportWarning && (
+              <p className="font-body text-sm text-destructive mt-1 font-semibold">
+                ⚠ Your passport must be valid for at least 6 months from your travel date to obtain an Indian visa. Please renew your passport before applying.
+              </p>
+            )}
+          </div>
+
           {/* ── Volunteering Preference ── */}
           <div>
             <label className={labelClass}>Volunteering Preference *</label>
@@ -163,7 +187,7 @@ const ApplyPage = () => {
           {/* ── Safeguarding & DBS (conditional) ── */}
           {isPeopleFacing(preference) && (
             <div className="space-y-4 p-4 rounded-lg border border-forest-green/20 bg-forest-green/5">
-              <h3 className="text-forest-green">Safeguarding & DBS</h3>
+              <h3 className="text-forest-green">Safeguarding & DBS (for Education and Disability Empowerment Volunteers)</h3>
 
               <div>
                 <label className={labelClass}>Do you hold a valid DBS check?</label>
@@ -281,20 +305,36 @@ const ApplyPage = () => {
             </div>
           </div>
 
-          {/* ── Emergency Contact ── */}
-          <h3 className="pt-4">Emergency Contact</h3>
+          {/* ── Emergency Contacts ── */}
+          <h3 className="pt-4">Emergency Contact 1</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
-              <label className={labelClass}>Name</label>
-              <input className={inputClass} />
+              <label className={labelClass}>Name *</label>
+              <input required className={inputClass} />
             </div>
             <div>
-              <label className={labelClass}>Relationship</label>
-              <input className={inputClass} />
+              <label className={labelClass}>Relationship *</label>
+              <input required className={inputClass} />
             </div>
             <div>
-              <label className={labelClass}>Phone</label>
-              <input type="tel" className={inputClass} />
+              <label className={labelClass}>Phone *</label>
+              <input required type="tel" className={inputClass} />
+            </div>
+          </div>
+
+          <h3 className="pt-2">Emergency Contact 2</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div>
+              <label className={labelClass}>Name *</label>
+              <input required className={inputClass} />
+            </div>
+            <div>
+              <label className={labelClass}>Relationship *</label>
+              <input required className={inputClass} />
+            </div>
+            <div>
+              <label className={labelClass}>Phone *</label>
+              <input required type="tel" className={inputClass} />
             </div>
           </div>
 
