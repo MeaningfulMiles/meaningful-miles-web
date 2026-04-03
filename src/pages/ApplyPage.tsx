@@ -187,7 +187,7 @@ const ApplyPage = () => {
           {/* ── Safeguarding & DBS (conditional) ── */}
           {isPeopleFacing(preference) && (
             <div className="space-y-4 p-4 rounded-lg border border-forest-green/20 bg-forest-green/5">
-              <h3 className="text-forest-green">Safeguarding & DBS</h3>
+              <h3 className="text-forest-green">Safeguarding & DBS (for Education and Disability Empowerment Volunteers)</h3>
 
               <div>
                 <label className={labelClass}>Do you hold a valid DBS check?</label>
