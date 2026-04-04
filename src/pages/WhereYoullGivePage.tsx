@@ -38,7 +38,7 @@ const charities = [
       "HR and recruitment professionals",
       "Adult care and mental health professionals and students",
     ],
-    commitment: "3–4 months (as requested by Sarthak)",
+    commitment: "3–4 weeks",
     website: "https://www.sarthakindia.org",
     accent: "fuchsia-accent",
   },
