@@ -109,6 +109,16 @@ const galleryImages = [
     caption: "Shared adventure beyond the expected route.",
   },
   {
+    src: glimpseClassroomTeaching,
+    alt: "Meaningful Miles volunteer teaching positive classroom management at a chalkboard.",
+    caption: "Skills shared, futures shaped — classroom to community.",
+  },
+  {
+    src: glimpseMarketCouple,
+    alt: "Two Meaningful Miles guests exploring a vibrant Indian market wearing branded t-shirts and caps.",
+    caption: "Culture, colour, and connection in every corner.",
+  },
+  {
     src: journeyEmuCare,
     alt: "Volunteer spending time with emus at an animal sanctuary.",
     caption: "Encounters with animals that stay with you.",
