@@ -43,7 +43,15 @@ const heroSlides = [
     label: "Animal welfare in action at a Delhi shelter",
   },
   {
+    src: heroProjectWhyClassroom,
+    alt: "Volunteers working alongside children at a Project WHY after-school centre in Delhi.",
+    label: "Education in action — community learning with Project WHY",
+  },
+  {
     src: heroDisabilitiesGroup,
+    alt: "Group activity session with volunteers and participants in a disabilities programme.",
+    label: "Disabilities empowerment through joyful, shared activity",
+  },
     alt: "Group activity session with volunteers and participants in a disabilities programme.",
     label: "Disabilities empowerment through joyful, shared activity",
   },
