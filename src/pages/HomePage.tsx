@@ -27,6 +27,9 @@ import journeyGroupBanner from "@/assets/journey-group-banner.jpeg";
 import journeyTajBacks from "@/assets/journey-taj-backs.jpeg";
 import journeyPlaygroundBanner from "@/assets/journey-playground-banner.jpeg";
 import journeyCommunityMeal from "@/assets/journey-community-meal.jpeg";
+import heroProjectWhyClassroom from "@/assets/project-why-classroom-blurred.jpeg";
+import glimpseClassroomTeaching from "@/assets/glimpse-classroom-teaching.png";
+import glimpseMarketCouple from "@/assets/glimpse-market-couple.png";
 
 const heroSlides = [
   {
