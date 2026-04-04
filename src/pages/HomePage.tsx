@@ -27,6 +27,9 @@ import journeyGroupBanner from "@/assets/journey-group-banner.jpeg";
 import journeyTajBacks from "@/assets/journey-taj-backs.jpeg";
 import journeyPlaygroundBanner from "@/assets/journey-playground-banner.jpeg";
 import journeyCommunityMeal from "@/assets/journey-community-meal.jpeg";
+import heroProjectWhyClassroom from "@/assets/project-why-classroom-blurred.jpeg";
+import glimpseClassroomTeaching from "@/assets/glimpse-classroom-teaching.png";
+import glimpseMarketCouple from "@/assets/glimpse-market-couple.png";
 
 const heroSlides = [
   {
@@ -38,6 +41,11 @@ const heroSlides = [
     src: heroVetClinic,
     alt: "Volunteer and local clinician treating a dog at a Delhi animal shelter.",
     label: "Animal welfare in action at a Delhi shelter",
+  },
+  {
+    src: heroProjectWhyClassroom,
+    alt: "Volunteers working alongside children at a Project WHY after-school centre in Delhi.",
+    label: "Education in action — community learning with Project WHY",
   },
   {
     src: heroDisabilitiesGroup,
@@ -96,6 +104,16 @@ const galleryImages = [
     src: journeyMountainSelfie,
     alt: "Two Meaningful Miles travellers smiling for a selfie at sunset in the mountains.",
     caption: "Shared adventure beyond the expected route.",
+  },
+  {
+    src: glimpseClassroomTeaching,
+    alt: "Meaningful Miles volunteer teaching positive classroom management at a chalkboard.",
+    caption: "Skills shared, futures shaped — classroom to community.",
+  },
+  {
+    src: glimpseMarketCouple,
+    alt: "Two Meaningful Miles guests exploring a vibrant Indian market wearing branded t-shirts and caps.",
+    caption: "Culture, colour, and connection in every corner.",
   },
   {
     src: journeyEmuCare,
