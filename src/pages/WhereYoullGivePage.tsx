@@ -66,6 +66,7 @@ const charities = [
 const accentBorderClasses: Record<string, string> = {
   saffron: "border-l-4 border-saffron",
   "fuchsia-accent": "border-l-4 border-fuchsia-accent",
+  marigold: "border-l-4 border-marigold",
 };
 
 const WhereYoullGivePage = () => (
