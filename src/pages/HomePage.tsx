@@ -51,6 +51,7 @@ const heroSlides = [
     src: heroDisabilitiesGroup,
     alt: "Group activity session with volunteers and participants in a disabilities programme.",
     label: "Disabilities empowerment through joyful, shared activity",
+  },
   {
     src: heroOldDelhiMarket,
     alt: "Warm, vibrant market scene evoking the colour and life of Old Delhi.",
