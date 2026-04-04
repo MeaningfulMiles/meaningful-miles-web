@@ -42,11 +42,31 @@ const charities = [
     website: "https://www.sarthakindia.org",
     accent: "fuchsia-accent",
   },
+  {
+    id: "project-why",
+    name: "Project WHY",
+    type: "Education & Community Development · Delhi & Dehradun, India",
+    about:
+      "Founded in 2000 by Anouradha Bakshi, Project WHY has spent over two decades creating spaces for underprivileged children and women to dream, learn and transform their lives. Operating five after-school support centres across South Delhi — in Giri Nagar, Govind Puri, Madanpur Khadar, Okhla and Yamuna — plus a centre in Dehradun, the organisation reaches over 1,200 children every year and has touched the lives of more than 10,000 children and women. Project WHY's work spans quality education support from grades 1 to 12, computer literacy, skill development for women and youth, and a mid-day meal programme for the youngest learners. Crucially, it employs people from within the communities it serves — including its own alumni — ensuring that change comes from within.",
+    whatYouDo:
+      "Volunteers at Project WHY work directly alongside community teachers and staff in the after-school centres. Depending on your background, you might support classroom learning and literacy, assist with English language teaching, help develop teacher training resources, use your professional skills to strengthen the organisation's communications or digital presence, or simply offer consistent, caring adult support to children who need it. No two placements look the same — Project WHY responds to what you bring and what the children need.",
+    suits: [
+      "Teachers & Educators looking to bring their classroom skills into a community setting",
+      "ESOL/EFL Teachers wanting to support English language learning in underserved urban communities",
+      "Teacher Educators & CPD professionals interested in building local teacher capacity",
+      "Mental Health Professionals and Social Workers who can offer pastoral support and safeguarding insight",
+      "Gap Year Volunteers ready to commit meaningfully and be genuinely useful",
+    ],
+    commitment: "3–4 weeks",
+    website: "https://www.projectwhy.org",
+    accent: "marigold",
+  },
 ];
 
 const accentBorderClasses: Record<string, string> = {
   saffron: "border-l-4 border-saffron",
   "fuchsia-accent": "border-l-4 border-fuchsia-accent",
+  marigold: "border-l-4 border-marigold",
 };
 
 const WhereYoullGivePage = () => (

@@ -192,11 +192,12 @@ const HomePage = () => (
       <ScrollReveal>
         <h2 className="text-center mb-12">Find Your Path</h2>
       </ScrollReveal>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
         {[
           { icon: "🐾", title: "Animal Welfare", desc: "Vet professionals and students — and anyone who loves animals — working alongside award-winning Delhi shelters.", color: "text-saffron", link: "/animal-welfare/professionals" },
           { icon: "♿", title: "Disabilities Empowerment", desc: "Bring specialist skills or simply a compassionate presence to life-changing programmes for adults with disabilities.", color: "text-fuchsia-accent", link: "/disabilities/professionals" },
-          { icon: "💛", title: "The Good-Hearted Soul", desc: "No specialism required. Just generosity, curiosity, and the desire to give back while experiencing India.", color: "text-marigold", link: "/good-hearted-soul" },
+          { icon: "📚", title: "Education Initiatives", desc: "Teachers, educators and gap year volunteers — safeguarding-first placements supporting children in Delhi's underserved communities.", color: "text-marigold", link: "/education-initiatives" },
+          { icon: "💛", title: "The Good-Hearted Soul", desc: "No specialism required. Just generosity, curiosity, and the desire to give back while experiencing India.", color: "text-burnt-orange", link: "/good-hearted-soul" },
         ].map((item, i) => (
           <ScrollReveal key={item.title} delay={i * 0.1}>
             <div className="mm-card text-center h-full flex flex-col">
