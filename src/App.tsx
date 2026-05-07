@@ -30,6 +30,7 @@ import GalleryPage from "./pages/GalleryPage";
 import WhereYoullGivePage from "./pages/WhereYoullGivePage";
 import EducationInitiativesPage from "./pages/EducationInitiativesPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import CookiePolicyPage from "./pages/CookiePolicyPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -72,6 +73,7 @@ const App = () => (
             <Route path="/where-youll-give" element={<WhereYoullGivePage />} />
             <Route path="/education-initiatives" element={<EducationInitiativesPage />} />
             <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+            <Route path="/cookie-policy" element={<CookiePolicyPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
