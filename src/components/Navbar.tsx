@@ -35,6 +35,7 @@ const navItems = [
       { label: "Volunteer Code of Conduct", path: "/code-of-conduct" },
       { label: "Visa", path: "/visa" },
       { label: "Vaccinations", path: "/vaccinations" },
+      { label: "Privacy Policy", path: "/privacy-policy" },
     ],
   },
 ];
