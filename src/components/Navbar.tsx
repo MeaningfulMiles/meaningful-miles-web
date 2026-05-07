@@ -36,6 +36,7 @@ const navItems = [
       { label: "Visa", path: "/visa" },
       { label: "Vaccinations", path: "/vaccinations" },
       { label: "Privacy Policy", path: "/privacy-policy" },
+      { label: "Cookie Policy", path: "/cookie-policy" },
     ],
   },
 ];
