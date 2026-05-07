@@ -122,8 +122,8 @@ const FounderPage = () => (
       <ScrollReveal>
         <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
           <Link to="/animal-welfare/professionals" className="btn-primary">Animal Welfare →</Link>
-          <Link to="/disabilities/professionals" className="btn-outline-green">Disabilities Empowerment →</Link>
-          <Link to="/education-initiatives" className="btn-outline-green">Education Initiatives →</Link>
+          <Link to="/disabilities/professionals" className="btn-primary">Disabilities Empowerment →</Link>
+          <Link to="/education-initiatives" className="btn-primary">Education Initiatives →</Link>
         </div>
       </ScrollReveal>
     </section>
