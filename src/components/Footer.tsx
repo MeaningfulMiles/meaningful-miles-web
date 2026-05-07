@@ -110,6 +110,7 @@ const Footer = () => (
             <Link to="/visa" className={footerLinkClass}>Visa</Link>
             <Link to="/vaccinations" className={footerLinkClass}>Vaccinations</Link>
             <Link to="/safeguarding" className={footerLinkClass}>Safeguarding & DBS</Link>
+            <Link to="/privacy-policy" className={footerLinkClass}>Privacy Policy</Link>
           </div>
         </div>
 
