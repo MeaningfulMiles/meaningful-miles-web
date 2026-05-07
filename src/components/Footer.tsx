@@ -151,6 +151,9 @@ const Footer = () => (
         <p className="font-body text-xs text-primary-foreground/50 leading-relaxed">
           Meaningful Miles provides ground-based packages including accommodation, meals, mineral water, local transport and curated sightseeing. International flights are not included. Volunteering insurance is mandatory and the sole responsibility of the guest. © 2026 Meaningful Miles. All rights reserved.
         </p>
+        <p className="font-body text-xs text-primary-foreground/50 leading-relaxed mt-4">
+          Meaningful Miles Volunteering and Travel Ltd is a company registered in England and Wales. Company Number: 17152319. Registered Office: 71–75 Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ.
+        </p>
       </div>
     </div>
   </footer>
