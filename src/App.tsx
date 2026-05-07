@@ -71,6 +71,7 @@ const App = () => (
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/where-youll-give" element={<WhereYoullGivePage />} />
             <Route path="/education-initiatives" element={<EducationInitiativesPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
