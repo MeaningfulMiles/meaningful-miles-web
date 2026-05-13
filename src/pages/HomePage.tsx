@@ -408,7 +408,12 @@ const GalleryCarousel = () => {
   }, [paused, maxOffset]);
 
   return (
-    <div className="relative max-w-6xl mx-auto">
+    <div
+      className="relative max-w-6xl mx-auto"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+      onTouchStart={() => setPaused(true)}
+    >
       <div className="overflow-hidden">
         <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${offset * (100 / itemsPerView)}%)` }}>
           {galleryImages.map((img, i) => (
