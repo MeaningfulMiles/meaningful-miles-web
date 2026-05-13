@@ -386,11 +386,34 @@ const HomePage = () => (
 
 const GalleryCarousel = () => {
   const [offset, setOffset] = useState(0);
-  const itemsPerView = typeof window !== "undefined" && window.innerWidth < 768 ? 1 : 3;
-  const maxOffset = galleryImages.length - itemsPerView;
+  const [paused, setPaused] = useState(false);
+  const [itemsPerView, setItemsPerView] = useState(() =>
+    typeof window !== "undefined" && window.innerWidth < 768 ? 1 : 3
+  );
+
+  useEffect(() => {
+    const onResize = () => setItemsPerView(window.innerWidth < 768 ? 1 : 3);
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
+  const maxOffset = Math.max(0, galleryImages.length - itemsPerView);
+
+  useEffect(() => {
+    if (paused || maxOffset === 0) return;
+    const t = setInterval(() => {
+      setOffset((o) => (o >= maxOffset ? 0 : o + 1));
+    }, 4000);
+    return () => clearInterval(t);
+  }, [paused, maxOffset]);
 
   return (
-    <div className="relative max-w-6xl mx-auto">
+    <div
+      className="relative max-w-6xl mx-auto"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+      onTouchStart={() => setPaused(true)}
+    >
       <div className="overflow-hidden">
         <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${offset * (100 / itemsPerView)}%)` }}>
           {galleryImages.map((img, i) => (
