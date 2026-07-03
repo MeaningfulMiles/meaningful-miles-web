@@ -20,10 +20,7 @@ const WhyChooseUs = () => (
       <meta name="description" content="Safety-first volunteering in Delhi with vetted NGOs, full ground logistics, Taj Mahal sightseeing, and ethical partnerships. Designed for solo travellers." />
     </Helmet>
 
-    <HeroSlider slides={[
-      { label: "HERO: Delhi Red Fort — majestic, golden" },
-      { label: "HERO: Close-up of volunteer hand and animal — connection" },
-    ]} height="60vh" />
+
 
     <section className="section-padding bg-off-white">
       <SectionDivider />
