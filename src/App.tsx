@@ -16,7 +16,7 @@ import RiskAnalysisPage from "./pages/RiskAnalysisPage";
 import DisabilitiesPro from "./pages/DisabilitiesPro";
 import DisabilitiesStudents from "./pages/DisabilitiesStudents";
 import GoodHeartedSoul from "./pages/GoodHeartedSoul";
-import WhatsIncluded from "./pages/WhatsIncluded";
+
 import SampleItineraries from "./pages/SampleItineraries";
 import SafetyPage from "./pages/SafetyPage";
 import FounderPage from "./pages/FounderPage";
