@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet-async";
 import PageLayout from "@/components/PageLayout";
-import HeroSlider from "@/components/HeroSlider";
 import SectionDivider from "@/components/SectionDivider";
 import ScrollReveal from "@/components/ScrollReveal";
 import { Link } from "react-router-dom";
